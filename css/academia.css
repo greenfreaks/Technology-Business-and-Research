@@ -606,12 +606,15 @@ video::-webkit-media-controls {
     margin-left: 60px;
     margin-bottom: 30px;
 }
+.phi a{
+   padding-left: 100px;
+   padding-right: 100px;
+}
 
 
 /*---------------------------*/
 /*------GRID PACT-------*/
 /*---------------------------*/
-
 .pact{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -640,13 +643,16 @@ video::-webkit-media-controls {
     margin-bottom: 5px;
 }
 .pact-btn{
-    display: flex;
-    justify-content: center;
+   display: flex;
+   justify-content: center;
     margin-top: 30px;
-    margin-left: 60px;
+    margin-right: 60px;
     margin-bottom: 30px;
 }
-
+.pact a{
+   padding-left: 100px;
+   padding-right: 100px;
+}
 /*---------------------------*/
 /*-------RESPONSIVE 800---------*/
 /*-------------------------*/
@@ -664,6 +670,7 @@ video::-webkit-media-controls {
 .phi-btn{
    margin-left: 0px;
 }
+
 .pact{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -671,10 +678,10 @@ video::-webkit-media-controls {
 .pact-img{
     width: 50%;
     margin-top: 40px;
-    margin-left: 80px;
+    margin-left: 100px;
 }
 .pact-btn{
-   margin-right: 90px;
+   margin-left: 0px;
 }
 }
 /*---------------------------*/
@@ -744,6 +751,7 @@ video::-webkit-media-controls {
    padding-left: 100px;
    padding-right: 100px;
 }
+
 .pact-img{
     width: 35%;
     margin-top: 20px;
@@ -763,7 +771,10 @@ video::-webkit-media-controls {
 
 @media screen and (max-width: 370px){
 .phi{
-    padding: 20px 10px 20px 10px;
+    padding: 1px 10px 20px 10px;
+}
+.phi-I{
+    margin-top: 10px;
 }
 .phi h3{
     font-size: 2em;
@@ -772,17 +783,18 @@ video::-webkit-media-controls {
     font-size: 1em;
 }
 .phi img{
-    margin-left: 13px;
+    margin-left: 115px;
 }
 .phi a{
-    display: flex;
-    justify-content: center;
-    width: 75%;
-    margin-top: 0px; 
+    width: 100%;
+    margin-left: 35px;
 }
 
 .pact{
-    padding: 20px 10px 20px 10px;
+    padding: 1px 10px 20px 10px;
+}
+.pact-I{
+    margin-top: 10px;
 }
 .pact h3{
     font-size: 2em;
@@ -791,13 +803,12 @@ video::-webkit-media-controls {
     font-size: 1em;
 }
 .pact img{
-    margin-left: 13px;
+    width: 35%;
+    margin-top: 20px;
+    margin-left: 100px;
 }
 .pact a{
-    display: flex;
-    justify-content: center;
-    width: 75%;
-    margin-top: 0px; 
+    width: 100%;
 }
 }
 
