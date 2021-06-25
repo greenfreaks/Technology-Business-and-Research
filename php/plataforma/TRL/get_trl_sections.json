@@ -1,0 +1,254 @@
+{
+    "error": false,
+    "msg": "-> preguntas cargadas-> secciones obtenidas",
+    "sections": [{
+        "section_id": "1",
+        "secction_title": "General",
+        "secction_description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "section_questions": [{
+            "id": "1",
+            "q": "Los procesos y principios de la tecnolog\u00eda b\u00e1sica han sido observados e informados."
+        }, {
+            "id": "12",
+            "q": "El an\u00e1lisis de equipos y procesos, as\u00ed como la prueba de concepto se han demostrado en un entorno simulado."
+        }, {
+            "id": "22",
+            "q": "Las pruebas a escala de laboratorio de los sistemas desarrollados se han completado en un entorno simulado."
+        }, {
+            "id": "31",
+            "q": "Se ha probado el prototipo en laboratorio con condiciones de un ambiente real."
+        }, {
+            "id": "48",
+            "q": "La mayor\u00eda de la documentaci\u00f3n de capacitaci\u00f3n est\u00e1 completa y bajo control."
+        }, {
+            "id": "53",
+            "q": "Se elaboraron los documentos para la utilizaci\u00f3n y mantenimiento del producto (manual del usuario, soporte t\u00e9cnico)."
+        }, {
+            "id": "65",
+            "q": "Toda la documentaci\u00f3n del producto ha sido completada."
+        }]
+    }, {
+        "section_id": "2",
+        "secction_title": "Mercado",
+        "secction_description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "section_questions": [{
+            "id": "2",
+            "q": "El problema u oportunidad que aborda la tecnolog\u00eda ha sido identificado."
+        }, {
+            "id": "5",
+            "q": "Los grupos de clientes potenciales han sido identificados."
+        }, {
+            "id": "13",
+            "q": "Se complet\u00f3 la evaluaci\u00f3n de oportunidades de mercado (tama\u00f1o del mercado, competencia, barreras de entrada identificadas)."
+        }, {
+            "id": "14",
+            "q": "El an\u00e1lisis de propuesta de valor inicial (caso de negocio) est\u00e1 completo."
+        }, {
+            "id": "23",
+            "q": "Los requisitos generales del sistema para la aplicaci\u00f3n del usuario final son conocidos y documentados."
+        }, {
+            "id": "24",
+            "q": "Se han definido las m\u00e9tricas de rendimiento que miden los requisitos establecidos."
+        }, {
+            "id": "37",
+            "q": "Se cuenta con una organizaci\u00f3n operativa acorde a las necesidades de operaci\u00f3n de la producci\u00f3n (mercadotecnia, log\u00edstica, producci\u00f3n y otros)."
+        }, {
+            "id": "38",
+            "q": "La propuesta de valor (caso de negocios) se comprende bien y se puede comunicar."
+        }, {
+            "id": "49",
+            "q": "Se ha identificado un socio para pruebas junto con las funciones y responsabilidades articuladas del plan y el posible costo compartido."
+        }, {
+            "id": "54",
+            "q": "El primer cliente capaz de pagar se ha asegurado (es decir, innovador o adoptante temprano)."
+        }, {
+            "id": "66",
+            "q": "Caso (s) de uso, posicionamiento y modelo de negocios completamente identificados e investigados."
+        }]
+    }, {
+        "section_id": "3",
+        "secction_title": "Desarrollo",
+        "secction_description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "section_questions": [{
+            "id": "3",
+            "q": "La hip\u00f3tesis de investigaci\u00f3n ha sido formulada."
+        }, {
+            "id": "6",
+            "q": "Se cuenta con un grupo de investigaci\u00f3n que pueda facilitar la evaluaci\u00f3n inicial de factibilidad de la tecnolog\u00eda."
+        }, {
+            "id": "7",
+            "q": "Se han identificados los componentes de su invenci\u00f3n tecnol\u00f3gica."
+        }, {
+            "id": "8",
+            "q": "Se conocen las capacidades y limitaciones de los investigadores."
+        }, {
+            "id": "9",
+            "q": "Se conoce la infraestructura de investigaci\u00f3n y los experimentos requeridos."
+        }, {
+            "id": "10",
+            "q": "Se cuenta con la estrategia preliminar para obtener el prototipo funcional."
+        }, {
+            "id": "15",
+            "q": "Se ha realizado un an\u00e1lisis de libertad para operar la tecnolog\u00eda."
+        }, {
+            "id": "16",
+            "q": "Se desarroll\u00f3 una estrategia para identificar y proteger la propiedad intelectual."
+        }, {
+            "id": "17",
+            "q": "Se han creado prototipos de los componentes."
+        }, {
+            "id": "18",
+            "q": "Es posible generar modelos y simulaciones matem\u00e1ticos y \/ o computacionales."
+        }, {
+            "id": "19",
+            "q": "El an\u00e1lisis del estado actual del arte muestra que la tecnolog\u00eda satisface una necesidad del mercado."
+        }, {
+            "id": "25",
+            "q": "Se ha determinado si es necesaria una protecci\u00f3n de patente internacional o nacional."
+        }, {
+            "id": "26",
+            "q": "Prototipos escalables producidos (m\u00e1s grande que la escala de laboratorio)."
+        }, {
+            "id": "27",
+            "q": "Dise\u00f1o conceptual desarrollado y documentado."
+        }, {
+            "id": "28",
+            "q": "Se han identificado los riesgos tecnol\u00f3gicos de mercado y financieros, con un plan de mitigaci\u00f3n de estos."
+        }, {
+            "id": "32",
+            "q": "Se implement\u00f3 una estrategia de propiedad intelectual."
+        }, {
+            "id": "33",
+            "q": "El prototipo a escala real cumple con las normas y\/o previsiones legales o del medio ambiente del sector."
+        }, {
+            "id": "34",
+            "q": "Estan preparadas las estimaciones de costos preliminares de productos comerciales."
+        }, {
+            "id": "39",
+            "q": "Se cuenta con usuarios potenciales que prueben la versi\u00f3n final del producto."
+        }, {
+            "id": "40",
+            "q": "Se conoce el costo total del proyecto, el cronograma y el alcance completo."
+        }, {
+            "id": "41",
+            "q": "Se inicio el proceso sobre el registro de las certificaciones requeridas por instancias gubernamentales para la producci\u00f3n y despliegue del prototipo."
+        }, {
+            "id": "50",
+            "q": "Las especificaciones de dise\u00f1oo del sistema est\u00e1n completas y listas para un dise\u00f1o detallado."
+        }, {
+            "id": "51",
+            "q": "El dise\u00f1o final est\u00e1 en marcha y pr\u00e1cticamente completo."
+        }, {
+            "id": "55",
+            "q": "Se tiene un producto comercializable."
+        }, {
+            "id": "56",
+            "q": "Se ha presentado una solicitud de patente."
+        }, {
+            "id": "67",
+            "q": "El tratado de cooperaci\u00f3n en materia de patentes ha sido desarrollado (si corresponde)."
+        }, {
+            "id": "68",
+            "q": "Toda la documentaci\u00f3n de usuario necesaria se ha desarrollado y puesto a disposici\u00f3n."
+        }, {
+            "id": "69",
+            "q": "La tecnolog\u00eda est\u00e1 en su forma final."
+        }]
+    }, {
+        "section_id": "4",
+        "secction_title": "Integraci\u00f3n",
+        "secction_description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "section_questions": [{
+            "id": "29",
+            "q": "Se han integrado los componentes principales de su invenci\u00f3n tecnol\u00f3gica."
+        }, {
+            "id": "42",
+            "q": "Se cuenta con los dibujos preliminares de dise\u00f1o para el sistema final completo."
+        }]
+    }, {
+        "section_id": "5",
+        "secction_title": "Pruebas y Validaci\u00f3n",
+        "secction_description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "section_questions": [{
+            "id": "4",
+            "q": "Los estudios en art\u00edculos cient\u00edficos confirman principios b\u00e1sicos."
+        }, {
+            "id": "11",
+            "q": "Los estudios en art\u00edculos cient\u00edficos muestran que la aplicaci\u00f3n es factible y los componentes de la tecnolog\u00eda se han caracterizado parcialmente."
+        }, {
+            "id": "20",
+            "q": "La invenci\u00f3n tecnol\u00f3gica funciona a nivel laboratorio."
+        }, {
+            "id": "30",
+            "q": "Se han realizado pruebas de validaci\u00f3n de efectividad de dicha invenci\u00f3n en laboratorio."
+        }, {
+            "id": "35",
+            "q": "Requisitos para la verificaci\u00f3n de tecnolog\u00eda establecidos, incluyen pruebas y validaci\u00f3n de funciones de seguridad."
+        }, {
+            "id": "43",
+            "q": "Se documentaron las diferencias entre la escala de laboratorio y las pruebas ambientales relevantes."
+        }, {
+            "id": "44",
+            "q": "Los prototipos han sido probados en un entorno relevante bajo condiciones simuladas."
+        }, {
+            "id": "45",
+            "q": "El prototipo puede demostrar todas las caracter\u00edsticas y funciones del eventual producto final."
+        }, {
+            "id": "57",
+            "q": "Se ha demostrado que la tecnolog\u00eda o el sistema es compatible con el entorno operativo."
+        }, {
+            "id": "58",
+            "q": "La viabilidad de ingenier\u00eda ha sido completamente demostrada."
+        }, {
+            "id": "59",
+            "q": "La empresa u organizaci\u00f3n es operativa al 100%."
+        }, {
+            "id": "70",
+            "q": "La implementaci\u00f3n operativa se ha completado con \u00e9xito."
+        }]
+    }, {
+        "section_id": "6",
+        "secction_title": "Manufactura y escalabilidad",
+        "secction_description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "section_questions": [{
+            "id": "21",
+            "q": "Se ha comenzado a determinar c\u00f3mo se escalar\u00e1 la producci\u00f3n de la tecnolog\u00eda o producto."
+        }, {
+            "id": "36",
+            "q": "Las t\u00e9cnicas de fabricaci\u00f3n se han definido hasta el punto donde se definen los problemas m\u00e1s grandes en este rubro."
+        }, {
+            "id": "46",
+            "q": "Se han entendi\u00f3 y resuelto los problemas de ingenier\u00eda relacionados a la escalabilidad del la tecnolog\u00eda o producto."
+        }, {
+            "id": "47",
+            "q": "Se tienen integradas las tecnolog\u00edas de producto y manufactura en una planta piloto (considerando todos los aspectos de manufacturabilidad)."
+        }, {
+            "id": "52",
+            "q": "Se cuenta con un proceso de manufactura operacional en baja escala (produciendo productos comerciales)."
+        }, {
+            "id": "60",
+            "q": "Se elaboraron los documentos para la utilizaci\u00f3n y mantenimiento del producto (manual del usuario, soporte t\u00e9cnico)."
+        }, {
+            "id": "61",
+            "q": "Se est\u00e1 manufacturando el producto en su versi\u00f3n final."
+        }, {
+            "id": "62",
+            "q": "Los procesos de fabricaci\u00f3n han demostrado niveles de producci\u00f3n aceptables."
+        }, {
+            "id": "63",
+            "q": "Todos los materiales para la producci\u00f3n est\u00e1n disponibles."
+        }, {
+            "id": "64",
+            "q": "Los problemas de producci\u00f3n han sido identificados y los principales han sido resueltos."
+        }, {
+            "id": "71",
+            "q": "Las demostraciones de producci\u00f3n est\u00e1n completas."
+        }, {
+            "id": "72",
+            "q": "La producci\u00f3n es estable y sostenida."
+        }, {
+            "id": "73",
+            "q": "Todos los procesos de fabricaci\u00f3n se controlan al nivel de calidad apropiado."
+        }]
+    }]
+}
