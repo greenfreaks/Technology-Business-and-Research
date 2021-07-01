@@ -145,6 +145,12 @@ footer {
     text-align: justify;
     text-justify: inter-word;
 }
+.right{
+    text-align: right;
+}
+.left{
+    text-align: left;
+}
 
 .bold {
     font-weight: bold;
@@ -328,6 +334,26 @@ footer {
     box-shadow: 2px 2px 2px 2px #aaa8a8;
 }
 
+.btn-black {
+    padding: 15px 25px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: var(--black);
+    border-radius: 5px;
+}
+
+.btn-black:hover {
+   box-shadow: 2px 2px 2px 2px #aaa8a8;
+}
+
+.btn-black:active {
+    background-color: var(--black);
+    box-shadow: 2px 2px 2px 2px #aaa8a8;
+}
+
 .btn-blue-corner{
     padding: 15px 25px;
     font-size: 15px;
@@ -391,6 +417,30 @@ footer {
 
 .btn-gray-corner:active {
     background-color: var(--black);
+    border-color:var(--black);
+}
+
+.btn-black-corner{
+    padding: 15px 25px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: var(--black);
+    border:  solid 2px;
+    border-color: var(--black);
+    border-radius: 5px;
+}
+
+.btn-black-corner:hover {
+    background-color: var(--black);
+    box-shadow: 2px 2px 2px 2px #aaa8a8;
+    color: #fff;
+}
+
+.btn-black-corner:active {
+    background-color: var(--black);
+    box-shadow: 2px 2px 2px 2px #aaa8a8;
     border-color:var(--black);
 }
 
@@ -560,7 +610,7 @@ video::-webkit-media-controls {
 /*---------------------------------*/
 
 /*---------------------------------*/
-/*------------BANNER------------*/
+/*------------BANNER---------------*/
 /*---------------------------------*/
 
 
@@ -568,90 +618,73 @@ video::-webkit-media-controls {
     width: 100%;
 }
 
-/*---------------------------*/
-/*------GRID PHI3-----*/
-/*---------------------------*/
-
-.phi{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas: "phi-I        phi-II";
-    padding: 0 20px 0 50px;
+/*-----------------------------------*/
+/*------------DESC ACA---------------*/
+/*-----------------------------------*/
+.desc-aca{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.desc-aca h4{
+    padding-top: 5px;
+    padding-bottom:5px;
+    border-radius: 5px;
 }
 
+/*---------------------------*/
+/*------GRID PHI-------------*/
+/*---------------------------*/
+.phi{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "phi-I     phi-II"
+}
 .phi-I{
     grid-area: phi-I;
-    margin-top: 40px;
-
+    padding-left: 80px;
 }
 .phi-II{
     grid-area: phi-II;
-}
-.phi-img{
-    width: 40%;
-    margin-top: 10px;
-    margin-left: 200px;
-}
-.phi-description{
-    margin-bottom: 5px;
-}
-.phi-btn{
-   display: flex;
-   justify-content: center;
-    margin-top: 30px;
-    margin-left: 60px;
-    margin-bottom: 30px;
+    padding-right: 80px;
+    margin-top: 50px;
 }
 .phi a{
-   padding-left: 100px;
-   padding-right: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.phi img{
+    max-width: 514px;
+    max-height: 177px;
 }
 
-
-/*---------------------------*/
-/*------GRID PACT-------*/
-/*---------------------------*/
+/*-------------------------------*/
+/*------GRID PACT----------------*/
+/*-------------------------------*/
 .pact{
-    margin-top: 50px;
-    margin-bottom: 50px;
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, auto);
-    grid-template-areas: "pact-II        pact-I";
-    padding: 0 20px 0 50px;
-}
-
-.pact-I{
-    grid-area: pact-I;
-    margin-top: 40px;
-
+    grid-template-areas: "pact-II     pact-I"
 }
 .pact-II{
     grid-area: pact-II;
+    padding-left: 80px;
+    margin-top: 50px;
 }
-.pact-img{
-    width: 40%;
-    margin-top: 10px;
-    margin-left: 200px;
-}
-.pact-description{
-    margin-bottom: 5px;
-}
-.pact-btn{
-   display: flex;
-   justify-content: center;
-    margin-top: 30px;
-    margin-right: 60px;
-    margin-bottom: 30px;
+.pact-I{
+    grid-area: pact-I;
+    padding-right: 80px;
 }
 .pact a{
-   padding-left: 100px;
-   padding-right: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.pact img{
+    max-width: 514px;
+    max-height: 177px;
 }
 /*---------------------------*/
 /*-------RESPONSIVE 800---------*/
@@ -659,80 +692,43 @@ video::-webkit-media-controls {
 
 @media screen and (max-width: 800px){
 .phi{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "phi-I"     
+                         "phi-II"
 }
-.phi-img{
-    width: 50%;
-    margin-top: 40px;
-    margin-left: 100px;
+.phi-I, .phi-II{
+    padding-left: 20px;
+    padding-right: 20px;
 }
-.phi-btn{
-   margin-left: 0px;
+.pact-I, .pact-II{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.phi-II, .pact-II{
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+.pact{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "pact-I"     
+                         "pact-II"
 }
 
-.pact{
-    margin-top: 50px;
-    margin-bottom: 50px;
+.pact-I h3, .pact-I p{
+    text-align: left;
 }
-.pact-img{
-    width: 50%;
-    margin-top: 40px;
-    margin-left: 100px;
-}
-.pact-btn{
-   margin-left: 0px;
-}
+
 }
 /*---------------------------*/
 /*------RESPONSIVE 600------*/
 /*-------------------------*/
 
 @media screen and (max-width: 600px){
-.phi{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas: "phi-I"        
-                         "phi-II";
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.phi-img{
-    width: 35%;
-    margin-top: 20px;
-    margin-left: 150px;
-}
-.phi a{
-   margin-right: 40px;
-   padding-left: 100px;
-   padding-right: 100px;
-}
-
-.pact{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas: "pact-I"        
-                         "pact-II";
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.pact-img{
-    width: 35%;
-    margin-top: 20px;
-    margin-left: 150px;
-}
-.pact a{
-   margin-right: 40px;
-   padding-left: 100px;
-   padding-right: 100px;
+.desc-aca h4{
+    text-align: center;
+    font-size: 1.9em;
 }
 }
 
@@ -741,26 +737,12 @@ video::-webkit-media-controls {
 /*-------------------------*/
 
 @media screen and (max-width: 500px){
-.phi-img{
-    width: 35%;
-    margin-top: 20px;
-    margin-left: 125px;
-}
-.phi a{
-   margin-right: 40px;
-   padding-left: 100px;
-   padding-right: 100px;
-}
 
-.pact-img{
-    width: 35%;
-    margin-top: 20px;
-    margin-left: 125px;
+.aca-phi h3, .aca-pact h3{
+    font-size: 1.6em;
 }
-.pact a{
-   margin-right: 40px;
-   padding-left: 100px;
-   padding-right: 100px;
+.aca-phi img, .aca-pact img{
+    max-width: 314px;
 }
 }
 
@@ -770,45 +752,21 @@ video::-webkit-media-controls {
 /*-------------------------*/
 
 @media screen and (max-width: 370px){
-.phi{
-    padding: 1px 10px 20px 10px;
+
+.desc-aca h4{
+    text-align: center;
+    font-size: 1.6em;
+    padding-right: 10px;
+    padding-left: 10px;
 }
-.phi-I{
-    margin-top: 10px;
+.aca-phi img, .aca-pact img{
+    max-width: 250px;
 }
-.phi h3{
-    font-size: 2em;
-}
-.phi-description{
+.phi a,.pact a{
     font-size: 1em;
-}
-.phi img{
-    margin-left: 115px;
-}
-.phi a{
-    width: 100%;
-    margin-left: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.pact{
-    padding: 1px 10px 20px 10px;
-}
-.pact-I{
-    margin-top: 10px;
-}
-.pact h3{
-    font-size: 2em;
-}
-.pact-description{
-    font-size: 1em;
-}
-.pact img{
-    width: 35%;
-    margin-top: 20px;
-    margin-left: 100px;
-}
-.pact a{
-    width: 100%;
-}
 }
 

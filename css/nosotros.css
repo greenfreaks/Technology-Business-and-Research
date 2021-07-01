@@ -145,6 +145,12 @@ footer {
     text-align: justify;
     text-justify: inter-word;
 }
+.right{
+    text-align: right;
+}
+.left{
+    text-align: left;
+}
 
 .bold {
     font-weight: bold;
@@ -328,6 +334,26 @@ footer {
     box-shadow: 2px 2px 2px 2px #aaa8a8;
 }
 
+.btn-black {
+    padding: 15px 25px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: var(--black);
+    border-radius: 5px;
+}
+
+.btn-black:hover {
+   box-shadow: 2px 2px 2px 2px #aaa8a8;
+}
+
+.btn-black:active {
+    background-color: var(--black);
+    box-shadow: 2px 2px 2px 2px #aaa8a8;
+}
+
 .btn-blue-corner{
     padding: 15px 25px;
     font-size: 15px;
@@ -391,6 +417,30 @@ footer {
 
 .btn-gray-corner:active {
     background-color: var(--black);
+    border-color:var(--black);
+}
+
+.btn-black-corner{
+    padding: 15px 25px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: var(--black);
+    border:  solid 2px;
+    border-color: var(--black);
+    border-radius: 5px;
+}
+
+.btn-black-corner:hover {
+    background-color: var(--black);
+    box-shadow: 2px 2px 2px 2px #aaa8a8;
+    color: #fff;
+}
+
+.btn-black-corner:active {
+    background-color: var(--black);
+    box-shadow: 2px 2px 2px 2px #aaa8a8;
     border-color:var(--black);
 }
 
@@ -577,157 +627,32 @@ video::-webkit-media-controls {
     grid-gap: 50px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(1fr, auto);
-    grid-template-areas: "collapsible-wrapper-mision        collapsible-wrapper-vision";
+    grid-template-areas: "mision        vision";
+    padding-left: 100px;
+    padding-right: 100px;
 }
-.collapsible-wrapper-mision{
-    grid-area: collapsible-wrapper-mision;
+.mision{
+    grid-area: mision;
 }
-.collapsible-wrapper-vision{
-    grid-area: collapsible-wrapper-vision;
+.vision{
+    grid-area: vision;
+}
+.mision-vision h5{
+    padding: 10px;
+    border-radius: 5px;
 }
 
 /*-------------------------------*/
 /*------------MISIÓN-------------*/
 /*-------------------------------*/
 
-.collapsible-wrapper-mision{
-    display: flex;
-    padding-top: 50px;
-    justify-content: center;
-}
-.collapsible-mision{
-    max-width: 450px;
-    overflow: hidden;
-    font-weight: 500;
-}
-.collapsible-mision input{
-    display: none;
-}
-.collapsible-mision-label{
-    font-size: 1.2em;
-    position: relative;
-    background: #000;
-    color: #fff;
-    display: block;
-    margin-botom: 10px;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-    z-index: 1;
-}
-.collapsible-mision-label:after{
-    content: " ";
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    width: 18px;
-    height: 18px;
-    transition: all 0.3s ease;
-}
-.collapsible-mision input:checked + label:after{
-    transform: rotate(90deg);
-}
 
-.mision-text{
-    max-height: 1px;
-    overflow: hidden;
-    border-radius: 4px;
-    line-height: 1.4
-    position: relative;
-    top: -100%;
-    opacity: 0.5;
-    transition: all 0.3s ease;
-}
-.collapsible-mision input:checked ~ .mision-text{
-    max-height: 300px;
-    padding-bottom: 25px;
-    background: #fff;
-    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), rgba(0, 0, 0, .08);
-    opacity: 1;
-    top: 0;
-}
-.mision-text h4{
-    margin-bottom: 10px;
-    padding: 15px 15px 0;
-    color: var(--azul-tbr);
-}
 
-.mision-text p{
-    padding-left: 15px; 
-    padding-right: 15px;
 
-}
 
 /*-------------------------------*/
 /*------------VISIÓN-------------*/
 /*-------------------------------*/
-
-.collapsible-wrapper-vision{
-    display: flex;
-    padding-top: 50px;
-    justify-content: center;
-}
-.collapsible-vision{
-    max-width: 450px;
-    overflow: hidden;
-    font-weight: 500;
-}
-.collapsible-vision input{
-    display: none;
-}
-.collapsible-vision-label{
-    font-size: 1.2em;
-    position: relative;
-    background: #000;
-    display: block;
-    margin-botom: 10px;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-    z-index: 1;
-}
-.collapsible-vision-label:after{
-    content: " ";
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    width: 18px;
-    height: 18px;
-    transition: all 0.3s ease;
-}
-.collapsible-vision input:checked + label:after{
-    transform: rotate(90deg);
-}
-
-.vision-text{
-    max-height: 1px;
-    overflow: hidden;
-    border-radius: 4px;
-    line-height: 1.4
-    position: relative;
-    top: -100%;
-    opacity: 0.5;
-    transition: all 0.3s ease;
-
-}
-.collapsible-vision input:checked ~ .vision-text{
-    max-height: 300px;
-    padding-bottom: 25px;
-    background: #fff;
-    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), rgba(0, 0, 0, .08);
-    opacity: 1;
-    top: 0;
-}
-.vision-text h4{
-    margin-bottom: 10px;
-    padding: 15px 15px 0;
-    color: var(--azul-tbr);
-}
-
-.vision-text p{
-    padding-left: 15px; 
-    padding-right: 15px;
-}
 
 /*-----------------------------------------*/
 /*------------MODELO DE TRABAJO------------*/
@@ -782,6 +707,9 @@ video::-webkit-media-controls {
 /*---------------------------*/
 
 @media screen and (max-width: 800px){
+.fixed-action-btn{
+    display: none;
+}
 
 .mision-vision{
 padding-left: 50px;
@@ -834,8 +762,8 @@ padding-right: 50px;
     grid-gap: 10px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(1fr, auto);
-    grid-template-areas: "collapsible-wrapper-mision"        
-                         "collapsible-wrapper-vision";
+    grid-template-areas: "mision"        
+                         "vision";
 }
 .modelo-trabajo .video-modelo{
     width: 500px;
