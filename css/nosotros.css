@@ -653,12 +653,27 @@ video::-webkit-media-controls {
 /*-------------------------------*/
 /*------------VISIÓN-------------*/
 /*-------------------------------*/
+/*======================index==================*/
 
+.video {
+    height: 50vh !important;
+    width: 100%;
+}
+
+/* Hide Play button + controls on iOS */
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+.thevideo {
+    height: 50vh !important;
+    width: 100%;
+}
 /*-----------------------------------------*/
 /*------------MODELO DE TRABAJO------------*/
 /*-----------------------------------------*/
 
-.modelo-trabajo .video-modelo{
+.modelo-trabajo video{
     width: 1080px;
     height: 700px;
 }
@@ -673,12 +688,7 @@ video::-webkit-media-controls {
 /*---------------------------------------------*/
 /*------------NUESTRAS CAPACIDADES-------------*/
 /*---------------------------------------------*/
-
-.capacidades .video-capacidades{
-    width: 1080px;
-    height: 700px;
-}
-.capacidades h5{
+.capacidades h5, .capacidades p{
     display: inline-block;
     text-align: right;
     padding: 15px 50px 15px 5px;
@@ -686,6 +696,33 @@ video::-webkit-media-controls {
     width: 80%;
 }
 
+
+.capacidades-container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1fr, 3);
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "capacidades-I         capacidades-II      capacidades-III";
+    padding: 15px 150px 15px 150px;
+    border-radius: 4px;
+}
+
+.capacidades-container i{
+    font-size: 5em;
+}
+
+.capacidades-I{
+    grid-area: capacidades-I;
+    text-align: center;
+}
+.capacidades-II{
+    grid-area: capacidades-II;
+    text-align: center;
+}
+.capacidades-III{
+    grid-area: capacidades-III;
+    text-align: center;
+}
 /*---------------------------------------------*/
 /*------------NUESTROS VALORES-----------------*/
 /*---------------------------------------------*/
@@ -727,16 +764,21 @@ padding-right: 50px;
     width: 88%;
 }
 
-.capacidades .video-capacidades{
-    width: 700px;
-    height: 420px;
-}
 .capacidades h5{
     display: inline-block;
     text-align: right;
     padding: 15px 50px 15px 5px;
     border-radius: 4px;
     width: 88%;
+}
+
+.capacidades-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "capacidades-I"
+                         "capacidades-II"      
+                         "capacidades-III";
+
 }
 
 .valores img{
@@ -777,13 +819,23 @@ padding-right: 50px;
     width: 84%;
 }
 
-.capacidades .video-capacidades{
+.video {
+    width: 500px;
+    height: 270px;
+}
+
+/* Hide Play button + controls on iOS */
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+.thevideo {
     width: 500px;
     height: 270px;
 }
 .capacidades h5{
     display: inline-block;
-    text-align: right;
+    text-align: center;
     padding: 15px 50px 15px 5px;
     border-radius: 4px;
     width: 88%;

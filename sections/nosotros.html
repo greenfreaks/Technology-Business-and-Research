@@ -16,6 +16,9 @@
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
 
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Somos una empresa convencida de que el conocimiento científico y tecnológico y la suma de esfuerzos son la base del desarrollo social, económico y ambiental.">
@@ -65,13 +68,8 @@
     </section>
 
     <section class="filosofia box-shadow center space">
-        <h4>De la C a la I</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h4>Nuestra filosofía</h4>
+        <p>Creemos en que el fin último del conocimiento generado a través de las ciencias, las tecnologías y las humanidades es mejorar la calidad de vida de la sociedad y las condiciones de nuestro entorno económico y ambiental, y lo queremos lograr a través de una una cultura de la honestidad y colaboración entre empresas, gobiernos, academia y las personas dispuestas a apostar a la innovación como forma de vida. </p>
     </section>
 
     <section class="mision-vision space">
@@ -88,13 +86,41 @@
 
     <section class="modelo-trabajo center space">
         <h5 class="white-text bg-dark-blue">Nuestro modelo de trabajo</h5>
-        <iframe class="video-modelo" width="560" height="315" src="https://www.youtube.com/embed/3LWIzKY5EX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <div class="video">
+            <video class="thevideo" loop preload="none" muted="muted" poster="../img/Banco de Imágenes/nosotros/diagrama.png">
+                <source src="../img/Banco de Imágenes/nosotros/como-lo-hacemos.mp4" type="video/mp4">
+                <source src="../img/Banco de Imágenes/nosotros/como-lo-hacemos.webm" type="video/webm">
+                            Su navegador no tiene soporte para la etiqueta de video.
+            </video>
+        </div>
     </section>
 
+    
     <section class="capacidades center space">
-        <h5 class="white-text bg-dark-gray">Nuestras capacidades</h5>
-        <iframe class="video-capacidades" width="560" height="315" src="https://www.youtube.com/embed/3LWIzKY5EX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h5 class="white-text bg-dark-gray tit-capacidades">Nuestras capacidades</h5>
+        <p>Contamos con especialistas y alianzas con las que apoyamos a empresas, academia y gobierno, en todos los procesos necesarios para innovar, desde la estrategia hasta la operación, en los ámbitos científico y tecnológico, financiero y fiscal, administrativo y legal, marketing y comercial, que desarrollamos a través de servicios de consultoría, capacitación y proyectos de desarrollo tecnológico.</p>
     </section>
+
+    <section class="capacidades-container">
+        <div class="capacidades-I">
+            <i class="fas fa-user-friends"></i>
+            <p class="capacidades-I-tx">Contamos con un equipo especializado en la gestión de la tecnología y la innovación, para desarrollar soluciones
+             personalizadas a la industria y la academia</p>
+        </div>
+
+        <div class="capacidades-II">
+            <i class="fas fa-globe"></i>
+            <p class="capacidades-II-tx">Amplio conocimiento del ecosistema de e innovación en México</p>
+        </div>
+
+        <div class="capacidades-III">
+            <i class="fas fa-shapes"></i>
+            <p class="capacidades-III-tx">Colaboración activa con organizaciones relevantes para quienes la innovación
+            es fundamental para desarrollar las soluciones que necesita la sociedad.</p>
+        </div>
+    </section>
+
 
     <section class="valores center space">
         <h5 class="white-text bg-dark-blue">Nuestros valores</h5>
@@ -140,6 +166,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <!--    <script src="js/materialize.js"></script>-->
     <script src="../js/init.js"></script>
+
+     <script>
+        const videos = document.querySelectorAll('video');
+
+        videos.forEach(video => {
+
+            video.addEventListener('mouseover', function() {
+                this.play();
+            })
+            video.addEventListener('touchstart', function() {
+                this.play();
+            })
+
+            video.addEventListener('mouseout', function() {
+                this.load();
+            })
+
+            video.addEventListener('touchstop', function() {
+                this.load();
+            })
+        })
+    </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137988434-1"></script>
