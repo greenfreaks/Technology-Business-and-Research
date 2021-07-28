@@ -105,7 +105,7 @@ const server = "http://localhost/tbr/php/init/";
         });
 
 
-        $(window).scroll(function () {
+        /*$(window).scroll(function () {
 
             if ($(window).scrollTop() > 150) {
                 $('#indexnav').addClass('blue-indexnav');
@@ -116,7 +116,7 @@ const server = "http://localhost/tbr/php/init/";
                 $('#indexnav').addClass('indexnav');
             }
 
-        });
+        });*/
 
         $("#notificame-form").submit(function (e) {
             e.preventDefault();

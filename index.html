@@ -1,14 +1,13 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
+	<meta charset="UTF-8">
+	 <title>TB&amp;R - Technology Bussines and Research</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/materialize.css" type="text/css">
+	<link rel="stylesheet" href="css/index.css" type="text/css">
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/materialize.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-    <link rel="stylesheet" href="css/index.css">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
@@ -20,29 +19,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Somos una empresa convencida de que el conocimiento científico y tecnológico y la suma de esfuerzos son la base del desarrollo social, económico y ambiental.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TB&amp;R - Technology Bussines and Research</title>
-</head>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src="js/jquery.flexslider.js"></script>
+
+	<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+    	touch: true,
+    	pauseOnAction: false,
+    	pauseOnHover: false,
+    });
+  });
+</script>
+
+</head>
 <body>
 
-    <nav id="indexnav" class="indexnav">
+	 <nav id="indexnav" class="indexnav">
         <div class="nav-wrapper container">
-            <a href="index.html"><img class="header-logo hide-on-med-and-down" src="img/logos/logo-blanco-horizontal.png"></a>
-            <a class="right logo-header-mobile orange-text hide-on-large-only" href="index.html"><img class="header-logo" src="img/logos/logo-blanco-horizontal.png"></a>
+            <a href="index.html"><img class="header-logo hide-on-med-and-down" src="img/logos/logo_p3.png"></a>
+            <a class="right logo-header-mobile orange-text hide-on-large-only" href="index.html"><img class="header-logo" src="img/logos/logo_p3.png"></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="sections/nosotros.html">Nosotros</a></li>
-                <li><a href="sections/servicios.html">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
                 <li><a href="sections/blog.html">Blog</a></li>
                 <!--<li><a target="_blank" href="#st-blog">Blog</a></li> -->
             </ul>
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons" style="color: var(--black);">menu</i></a>
         </div>
     </nav>
 
     <ul id="nav-mobile" class="sidenav">
         <div class="nav-logo center"><a href="index.html"><img class="header-logo" src="img/logo_p3.png"></a></div>
-                <li><a href="sections/nosotros.html">Nosotros</a></li>
-                <li><a href="sections/servicios.html">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
                 <li><a href="sections/blog.html">Blog</a></li>
                 <!--<li><a target="_blank" href="#st-blog">Blog</a></li> -->
     </ul>
@@ -61,132 +73,141 @@
         </ul>
     </div>
 
-    <div id="main-slider" class="slider">
-        <ul class="slides">
-            <li class="">
-                <img src="img/Banco de Imágenes/Inicio/Banner principal 1.jpg">
-                <!--<div class="caption center bg-transparent-white round-corner">
-                    <div class="row center">
-                        <div class="col s12">
-                            <h3 class="txt-blue-tbr">Convocatoria EFIDT 2019</h3>
-                            <h5 class="txt-black bold">Estamos listos para apoyarte.</h5>
-                            <a href="modulos/EFIDT2019/" class="waves-effect waves-light btn cta"><i class="material-icons left">contact_support</i>Leer más</a>
-                        </div>
-                    </div>
-                </div> -->
-            </li>
-            <li class="">
-                <img src="img/Banco de Imágenes/Inicio/Banner principal 2.jpg">
-                <!--<div class="caption center blanco-transparente round-corner">
-                    <div class="row center">
-                        <div class="col s12">
-                            <h3 class="texto-azul-tbr">¿No sabes por dónde empezar?</h3>
-                            <h5 class="black-text negrita">Toma nuestro test y descubre tu objetivo.</h5>
-                            <a href="modulos/explora_como/test.html" class="waves-effect waves-light btn cta"><i class="material-icons left">contact_support</i>Comenzar test</a>
-                        </div>
-                    </div>
-                </div>-->
-            </li>
-            <li>
-                <img src="img/slides/inicio/business.jpg">
-                <!-- random image -->
-               <!-- <div class="caption left-align texto-azul-tbr blanco-transparente round-corner">
-                    <h3>Conoce a Empresa X</h3>
-                    <h5 class="black-text negrita">De productor a laboratorista, conoce su historia y descubre tu camino.</h5>
-                    <a class="waves-effect waves-light btn cta center"><i class="material-icons left">explore</i>Descubre más</a>
-                </div> -->
-            </li>
-            <li>
-                <img src="img/slides/inicio/meeting.jpg">
-               <!-- <div class="caption right-align texto-azul-tbr blanco-transparente round-corner">
-                    <h3>Recursos para innovadores</h3>
-                    <h5 class="black-text negrita">Conoce todas las convocatorias abiertas en nuestro blog.</h5>
-                    <a class="waves-effect waves-light btn cta"><i class="material-icons left">dashboard</i>Recursos</a>
-                </div>
-            </li> -->
-        </ul>
+    <br>
+    <div class="space"></div>
+
+	<div class="flexslider">
+		<ul class="slides">
+			<li>
+				<img src="img/inicio/slides/Banner Inicio01-Gris_1000x400.png">
+				<section class="flex-caption">
+					<p></p>
+				</section>
+			</li>
+			<li>
+				<img src="img/2.jpg" alt="">
+				<section class="flex-caption">
+					<p></p>
+				</section>
+			</li>
+			<li>
+				<img src="img/3.jpg" style="width: 100%;"></img>
+				<section class="flex-caption">
+					<p></p>
+				</section>
+			</li>
+		</ul>
+	</div>
+
+	<div id="nosotros"></div>
+
+    <section class="proposito center">
+        <div class="proposito_I">
+            <h5 class="left txt-blue-tbr">Nuestro propósito es convertir el conocimiento de personas y organizaciones en innovaciones</h5> <br>
+            <p class="left">Somos una organización que impulsa la transformación del conocimiento generado desde las ciencias, las tecnologías y las humanidades en innovaciones para mejorar la calidad de vida de la sociedad y las condiciones de nuestro entorno económico y ambiental <br> <br>
+            Nuestra cultura de trabajo se basa en la honestidad y colaboración con empresas, gobiernos, instituciones académicas y personas dispuestas a adoptar la innovación como estrategia de crecimiento.</p>
+        </div>
+
+        <div class="proposito_II video">
+            <video class="thevideo" loop preload="none" muted="muted" poster="img/inicio/nosotros-diagrama.png">
+                <source src="img/inicio/nosotros-como-lo-hacemos.mp4" type="video/mp4">
+                <source src="img/inicio/nosotros-como-lo-hacemos.webm" type="video/webm">
+                            Su navegador no tiene soporte para la etiqueta de video.
+            </video>
+        </div>
+    </section>
+
+    <section class="capacidades center">
+        <div class="capacidades_I">
+            <h5 class="left txt-blue-tbr">Nuestras capacidades</h5> <br>
+            <p class="justify left">Contamos con especialistas y alianzas con las que apoyamos a empresas, academia y gobierno, en todos los procesos necesarios para innovar, desde la estrategia hasta la operación, en los ámbitos científico y tecnológico, financiero y fiscal, administrativo y legal, marketing y comercial.</p>
+        </div>
+
+        <div class="capacidades_II video">
+            <video class="thevideo" loop preload="none" muted="muted" poster="img/inicio/nosotros-diagrama.png">
+                <source src="img/inicio/nosotros-como-lo-hacemos.mp4" type="video/mp4">
+                <source src="img/inicio/nosotros-como-lo-hacemos.webm" type="video/webm">
+                            Su navegador no tiene soporte para la etiqueta de video.
+            </video>
+        </div>
+    </section>
+
+    <div id="servicios"></div>
+
+    <div class="tit_servicios">
+        <h5 class="bold">Nuestra propuesta de valor</h5> <br>
+        <hr style="width: 35%; height: 5px; background: var(--blue-tbr); border-radius: 10px;" class="left">
     </div>
 
-    <div id="st-nosotros"></div>
-
-    <section id="nosotros" class="space center box-shadow">
-        <h4 class="">Nosotros</h4>
-        <p>Somos una organización que impulsa la transformación del conocimiento científico y tecnológico en innovaciones que generan bienestar social, económico y ambiental.</p> <br>
-        <a href="sections/nosotros.html" class="btn-blue-corner">Conócenos</a>
-        <br> <br>
-    </section>
-
-    <div id="st-servicios"></div>
-
-    <section  id="servicios" class="servicios space box-shadow">
-        <div id="academia" class="center">
+    <section class="servicios space">
+        <div class="academia center">
+            <img src="img/inicio/Servicios Academia-Inmueble.jpg">
             <h5 class="bold">Academia</h4>
             <p class="justify">Ayudamos a llevar tecnologías, conocimientos y talentos en ciencia, tecnología y humanidades de Instituciones de Educación Superior y Centros Públicos de Investigación hacia empresas y emprendimientos, para generar oportunidades de desarrollo profesional para posgraduados y colaboración para investigadores, así como recursos para financiar la investigación, desarrollo e innovación a través de la transferencia de tecnología y servicios tecnológicos.</p> <br>
-            <a href="sections/academia.html" class="btn-red-corner">Conoce más</a>
+            <a href="sections/academia.html" class="btn-blue-corner">Saber más</a>
         </div>
 
-        <div id="void"></div>
-
-        <div id="industria" class="center">
+        <div class="industria center">
+            <img src="img/inicio/Servicios Industria-Persona.jpg">
             <h5 class="bold">Industria</h4>
-            <p class="justify">Apoyamos a empresas y emprendimientos a implementar o mejorar procesos de desarrollo tecnológico e innovación, que les ayuden a aprovechar oportunidades de negocio a través del desarrollo de proyectos, equipos y competencias para lanzar nuevos y mejores productos y tecnologías al mercado, que logren resultados sostenibles desde el corto plazo por su impacto económico, social y ambiental.</p> <br>
-            <a href="sections/industria.html" class="btn-red-corner">Conoce más</a>
+            <p class="justify">Apoyamos a empresas y emprendimientos a implementar o mejorar procesos de desarrollo tecnológico e innovación, que les ayuden a aprovechar oportunidades de negocio a través del desarrollo de proyectos, equipos y competencias para lanzar nuevos y mejores productos y tecnologías al mercado, que logren resultados sostenibles desde el corto plazo por su impacto económico, social y ambiental.</p> <br> <br>
+            <a href="sections/industria.html" class="btn-blue-corner">Saber más</a>
         </div>
 
-        <div id="gobierno" class="center">
+        <div class="gobierno center">
+            <img src="img/inicio/Servicios Gobierno 1.jpg">
             <h5 class="bold">Gobierno</h4>
-            <p class="justify">Somos un aliado estratégico de instituciones públicas del gobierno federal, estatal y municipal, que buscan desarrollar políticas públicas, planes, programas y proyectos de innovación apegados a sus objetivos de impacto social, económico y ambiental, fundamentados en la ciencia, la tecnología y las humanidades y en alianzas con la industria, la academia y la sociedad civil organizada. </p> <br>
-            <a href="sections/gobierno.html" class="btn-red-corner">Conoce más</a>
+            <p class="justify">Somos un aliado estratégico de instituciones públicas del gobierno federal, estatal y municipal, que buscan desarrollar políticas públicas, planes, programas y proyectos de innovación apegados a sus objetivos de impacto social, económico y ambiental, fundamentados en la ciencia, la tecnología y las humanidades y en alianzas con la industria, la academia y la sociedad civil organizada. </p> <br> <br>
+            <a href="sections/gobierno.html" class="btn-blue-corner">Saber más</a> 
         </div>
+
     </section>
 
-    <h5 id="st-blog" class="center space bg-black txt-white">Visita Nuestro blog</h5> <br>
+     <section class="footer space">
+         <div class="footer_I center">
+            <img src="img/logos/logo-blanco-vertical.png">
+         </div>
 
-    <section class="blog center">
-        <a href="#"><img src="img/slides/inicio/meeting.jpg" class="img-one"></a>
-        <a href="#"><img src="img/slides/inicio/business.jpg" class="img-two"></a>
-        <a href="#"><img src="img/slides/inicio/marketing.jpg" class="img-three"></a>
-    </section>
+         <div class="footer_II center">
+             <h5 class="footer_II_p txt-white">Síguenos en nuestras redes sociales</h5>
+             <img src="img/social-networks/facebook-logo.png" class = "footer_II_fb">
+             <img src="img/social-networks/twitter-logo-silhouette.svg" class = "footer_II_tw">
+             <img src="img/social-networks/linkedin-logo.svg" class = "footer_II_lk">
+         </div>
 
-    <footer class="page-footer custom-footer">
-        <div class="container">
-            <div class="row custom-row">
-                <div class="col l5 s12">
-                    <h6 class="white-text"><strong>Technology Bussines and Research</strong></h6>
-                    <p class="txt-white text-lighten-4 texto-footer justify">Somos una empresa convencida de que el conocimiento científico y tecnológico y la suma de esfuerzos son la base del desarrollo social, económico y ambiental.</p>
-                </div>
-                <div class="col l4 s12 ">
-                    <h6 class="white-text"><i class="material-icons">location_on</i>Ubícanos en:</h6>
+         <div class="footer_III center">
+             <a href=""><h5 class="txt-white">Poítica de Privacidad</h5></a>
+         </div>
+     </section>
 
-                    <p class="texto-footer"><a class="white-text" target="_blank" href="https://goo.gl/maps/mRMefDf6c7U2">Álvaro Obregón 56, Col. Atempa, Tizayuca, Hidalgo. CP 43808</a><br> Teléfono:<a class="white-text " href="tel:017797966790">01 779 796 6790</a></p>
-                </div>
-                <div class="col l3 s12">
-                    <h6 class="white-text">Más información</h6>
-                    <ul>
-                        <!--                        <li><a class="white-text btn-help" href="#!">Ayuda</a></li>-->
-                        <li><a class="white-text" href="http://www.techbusiness.com.mx/politica_de_privacidad.html" target="_blank">Política de Privacidad</a></li>
-                    </ul>
-                    <div class="row center">
-                        <div class="col s2"><a href="https://www.facebook.com/TechBusinessMx" target="_blank"><img class="social-footer" src="img/social-networks/facebook-logo.png"></a> </div>
-                        <div class="col s2"><a href="https://twitter.com/TechBusinessMx" target="_blank"><img class="social-footer" src="img/social-networks/twitter-logo-silhouette.svg"></a> </div>
-                        <div class="col s2"><a href="https://mx.linkedin.com/company/technology-business-and-research-sapi-de-cv" target="_blank"><img class="social-footer" src="img/social-networks/linkedin-logo.svg"></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                <p class="right">Made by <a class="orange-text text-lighten-3">Mario Sandoval Velázquez</a> </p>
-                <p>©Technology Bussines &amp; Research 2017</p>
-            </div>
-        </div>
-    </footer>
+     <footer class="f_footer center">
+             <p class="txt-white bold f_footer_I">Technology Business & Research 2021</p>
+             <p class="txt-white bold f_footer_II">Made By <a href="">Mario Sandoval Velázquez</a></p>
+     </footer>
 
+    <script>
+        const videos = document.querySelectorAll('video');
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <!--    <script src="js/materialize.js"></script>-->
-    <script src="js/init.js"></script>
+        videos.forEach(video => {
+
+            video.addEventListener('mouseover', function() {
+                this.play();
+            })
+            video.addEventListener('touchstart', function() {
+                this.play();
+            })
+
+            video.addEventListener('mouseout', function() {
+                this.load();
+            })
+
+            video.addEventListener('touchstop', function() {
+                this.load();
+            })
+        })
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="js/init.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137988434-1"></script>
@@ -201,5 +222,5 @@
         gtag('config', 'UA-137988434-1');
     </script>
 
-
-</body></html>
+</body>
+</html>
