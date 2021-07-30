@@ -8,7 +8,7 @@ const server = "http://localhost/tbr/php/init/";
 
         let btn_fb = `<li><a href="https://www.facebook.com/TechBusinessMx" target="_blank" class="btn-floating blue tooltipped" data-position="left" data-tooltip="Síguenos"> <img class="fab-img" src="http://www.techbusiness.com.mx/img/social-networks/facebook-logo.png"></a></li>`;
 
-        let btn_messenger = `<li><a href="https://m.me/TechBusinessMx/" target="_blank" class="btn-floating blue tooltipped" data-position="left" data-tooltip="Chatea on nosotros"> <img class="fab-img" src="http://www.techbusiness.com.mx/img/social-networks/messenger.png"></a></li>`;
+        let btn_messenger = `<li><a href="https://m.me/TechBusinessMx/" target="_blank" class="btn-floating blue tooltipped" data-position="left" data-tooltip="Pregúntanos"> <img class="fab-img" src="http://www.techbusiness.com.mx/img/social-networks/messenger.png"></a></li>`;
 
         let floatingBtn =
             `<div id="featureHelp" class="tap-target red no-autoinit" data-target="menu">
@@ -26,7 +26,7 @@ const server = "http://localhost/tbr/php/init/";
                     ${btn_fb}
                     ${btn_messenger}
                     <li class="hide-on-med-and-up"><a href="tel:017797966790" class="btn-floating green tooltipped" data-position="left" data-tooltip="Llamanos 7797966790"> <i class="large material-icons box">phone</i></a></li>
-                    <li><a href="mailto:contacto@techbr.com.mx" class="btn-floating purple tooltipped" data-position="left" data-tooltip="Email"> <i class="large material-icons box">mail</i></a></li>
+                    <li><a href="mailto:contacto@techbr.com.mx" class="btn-floating purple tooltipped" data-position="left" data-tooltip="Escríbenos"> <i class="large material-icons box">mail</i></a></li>
                 </ul>
             </div>`;
 

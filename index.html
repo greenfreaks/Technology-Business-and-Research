@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	 <title>TB&amp;R - Technology Bussines and Research</title>
+	<title>TB&amp;R - Technology Bussines and Research</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="css/materialize.css" type="text/css">
 	<link rel="stylesheet" href="css/index.css" type="text/css">
@@ -47,7 +47,7 @@
             <ul class="right hide-on-med-and-down">
                 <li class><a href="#nosotros">Nosotros</a></li>
                 <li class><a href="#servicios">Servicios</a></li>
-                <li class><a href="sections/blog.html">Blog</a></li>
+                <li class><a href="#">Blog</a></li>
                 <!--<li><a target="_blank" href="#st-blog">Blog</a></li> -->
             </ul>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons" style="color: var(--black);">menu</i></a>
@@ -58,7 +58,7 @@
         <div class="nav-logo center"><a href="index.html"><img class="header-logo" src="img/logo_p3.png"></a></div>
                 <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#servicios">Servicios</a></li>
-                <li><a href="sections/blog.html">Blog</a></li>
+                <li><a href="#">Blog</a></li>
                 <!--<li><a target="_blank" href="#st-blog">Blog</a></li> -->
     </ul>
 
@@ -68,7 +68,7 @@
         </a>
         <ul>
             <li><a href="https://www.facebook.com/TechBusinessMx" target="_blank" class="btn-floating blue-tbr tooltipped" data-position="left" data-tooltip="Siguenos"> <img class="fab-img" src="img/social-networks/facebook-logo.png"> </a></li>
-            <li><a href="https://m.me/TechBusinessMx/" target="_blank" class="btn-floating blue tooltipped" data-position="left" data-tooltip="Chatea on nosotros"> <img class="fab-img" src="img/social-networks/messenger.png"> </a></li>
+            <li><a href="https://m.me/TechBusinessMx/" target="_blank" class="btn-floating blue tooltipped" data-position="left" data-tooltip="Chatea con nosotros"> <img class="fab-img" src="img/social-networks/messenger.png"> </a></li>
             <!--            <li><a href="tel:017797966790" class="btn-floating green tooltipped" data-position="left" data-tooltip="Llamanos 7711530636"> <i class="large material-icons box">phone</i></a></li>-->
             <li><a href="mailto:blabla@bla.com" class="btn-floating purple tooltipped" data-position="left" data-tooltip="Email"> <i class="large material-icons box">mail</i></a></li>
             <!--            <li><a href="https://www.instagram.com/" target="_blank" class="btn-floating purple"> <img class="fab-img" src="img/instagram-logo.png"> </a></li>-->
@@ -102,17 +102,19 @@
 		</ul>
 	</div>
 
+    <div class="content">
+
 	<div id="nosotros"></div>
 
     <section class="proposito center">
         <div class="proposito_I">
-            <h5 class="left txt-blue-tbr bold">Nuestro propósito es convertir el conocimiento de personas y organizaciones en innovaciones</h5> <br>
+            <h5 class="left txt-blue-tbr bold">Nuestro propósito es convertir el conocimiento de personas y organizaciones en innovaciones</h5>
             <p class="left">Somos una organización que impulsa la transformación del conocimiento generado desde las ciencias, las tecnologías y las humanidades en innovaciones para mejorar la calidad de vida de la sociedad y las condiciones de nuestro entorno económico y ambiental <br> <br>
             Nuestra cultura de trabajo se basa en la honestidad y colaboración con empresas, gobiernos, instituciones académicas y personas dispuestas a adoptar la innovación como estrategia de crecimiento.</p>
         </div>
 
         <div class="proposito_II video">
-            <video class="thevideo" loop preload="none" muted="muted" poster="img/inicio/nosotros-diagrama.png">
+            <video class="proposito_video" loop preload="none" muted="muted" poster="img/inicio/2Secuenciam2.png">
                 <source src="img/inicio/nosotros-como-lo-hacemos.mp4" type="video/mp4">
                 <source src="img/inicio/nosotros-como-lo-hacemos.webm" type="video/webm">
                             Su navegador no tiene soporte para la etiqueta de video.
@@ -122,12 +124,12 @@
 
     <section class="capacidades center">
         <div class="capacidades_I">
-            <h5 class="left txt-blue-tbr bold">Nuestras capacidades</h5> <br>
+            <h5 class="left txt-blue-tbr bold">Nuestras capacidades</h5>
             <p class="justify left">Contamos con especialistas y alianzas con las que apoyamos a empresas, academia y gobierno, en todos los procesos necesarios para innovar, desde la estrategia hasta la operación, en los ámbitos científico y tecnológico, financiero y fiscal, administrativo y legal, marketing y comercial.</p>
         </div>
 
         <div class="capacidades_II video">
-            <video class="thevideo" loop preload="none" muted="muted" poster="img/inicio/2Secuenciam2.png">
+            <video class="capacidades_video" loop preload="none" muted="muted" poster="img/inicio/2Secuenciam2.png">
                 <source src="img/inicio/WhatsApp Video 2021-07-29 at 12.31.40 PM.pm4" type="video/mp4">
                 <source src="img/inicio/nosotros-como-lo-hacemos.webm" type="video/webm">
                             Su navegador no tiene soporte para la etiqueta de video.
@@ -138,69 +140,70 @@
     <div id="servicios"></div>
 
     <div class="tit_servicios">
-        <h5 class="bold">Nuestra propuesta de valor</h5> <br>
+        <h5 class="bold">Nuestra propuesta de valor</h5>
         <hr style="width: 35%; height: 5px; background: var(--blue-tbr); border-radius: 10px;" class="left">
     </div>
 
-    <section class="servicios space">
+    <section class="servicios">
         <div class="academia center">
             <img src="img/inicio/Academia.png">
             <h5 class="bold txt-blue-tbr">Academia</h4>
             <p class="justify">Ayudamos a llevar tecnologías, conocimientos y talentos en ciencia, tecnología y humanidades de Instituciones de Educación Superior y Centros Públicos de Investigación hacia empresas y emprendimientos, para generar oportunidades de desarrollo profesional para posgraduados y colaboración para investigadores, así como recursos para financiar la investigación, desarrollo e innovación a través de la transferencia de tecnología y servicios tecnológicos.</p> <br>
-            <a href="sections/academia.html" class="btn-blue-corner">Saber más</a>
+            <a href="sections/academia.html" class="btn-blue-corner" target="_blank">Saber más</a>
         </div>
 
         <div class="industria center">
             <img src="img/inicio/Industria.png">
             <h5 class="bold txt-blue-tbr">Industria</h4>
             <p class="justify">Apoyamos a empresas y emprendimientos a implementar o mejorar procesos de desarrollo tecnológico e innovación, que les ayuden a aprovechar oportunidades de negocio a través del desarrollo de proyectos, equipos y competencias para lanzar nuevos y mejores productos y tecnologías al mercado, que logren resultados sostenibles desde el corto plazo por su impacto económico, social y ambiental.</p> <br> <br>
-            <a href="sections/industria.html" class="btn-blue-corner">Saber más</a>
+            <a href="sections/industria.html" class="btn-blue-corner" target="_blank">Saber más</a>
         </div>
 
         <div class="gobierno center">
             <img src="img/inicio/Gobierno.png">
             <h5 class="bold txt-blue-tbr">Gobierno</h4>
             <p class="justify">Somos un aliado estratégico de instituciones públicas del gobierno federal, estatal y municipal, que buscan desarrollar políticas públicas, planes, programas y proyectos de innovación apegados a sus objetivos de impacto social, económico y ambiental, fundamentados en la ciencia, la tecnología y las humanidades y en alianzas con la industria, la academia y la sociedad civil organizada. </p> <br> <br>
-            <a href="sections/gobierno.html" class="btn-blue-corner">Saber más</a> 
+            <a href="sections/gobierno.html" class="btn-blue-corner" target="_blank">Saber más</a> 
         </div>
 
     </section>
+    </div>
 
-     <section class="footer space">
-         <div class="footer_I center">
+    <section class="footer space">
+        <div class="footer_I center">
             <img src="img/logos/logo-blanco-vertical.png">
-         </div>
+        </div>
 
-         <div class="footer_II left">
-             <h5 class="footer_II_p txt-white bold">Síguenos en nuestras redes sociales</h5> <br>
+        <div class="footer_II left">
+            <h5 class="footer_II_p txt-white bold">Síguenos en nuestras redes sociales:</h5> <br>
 
-             <div class="footer_II_fb">
+            <div class="footer_II_fb">
                 <img src="img/social-networks/facebook-logo.png">
                 <a class="bold" href="https://www.facebook.com/TechBusinessMx">https://www.facebook.com/TechBusinessMx</a>
-             </div> <br>
+            </div> <br>
 
-             <div class="footer_II_tw">
+            <div class="footer_II_tw">
                 <img src="img/social-networks/twitter-logo-silhouette.svg">
                 <a class="bold" href="https://twitter.com/TechBusinessMx">https://twitter.com/TechBusinessMx</a>
-             </div> <br>
+            </div> <br>
 
-             <div class="footer_II_lk"> 
+            <div class="footer_II_lk"> 
                 <img src="img/social-networks/linkedin-logo.svg">
                 <a class="bold" href="https://mx.linkedin.com/company/technology-business-and-research-sapi-de-cv">
                     https://mx.linkedin.com/company/technology-business-and- <br> research-sapi-de-cv</a>
-             </div>
-         </div>
+            </div>
+        </div>
 
-         <div class="footer_III center">
-             <a href=""><h5 class="txt-white bold">Poítica de Privacidad</h5></a>
-             <a href=""><i class="fas fa-shield-alt txt-white"></i></a>
-         </div>
-     </section>
+        <div class="footer_III center">
+            <a href=""><h5 class="txt-white bold">Poítica de Privacidad</h5></a>
+            <a href=""><i class="fas fa-shield-alt txt-white"></i></a>
+        </div>
+    </section>
 
-     <footer class="f_footer center">
-             <p class="txt-white bold f_footer_I">Technology Business & Research 2021</p>
-             <p class="txt-white bold f_footer_II">Made By <a href="https://www.linkedin.com/in/mario-sandoval-vel%C3%A1zquez-a010271a0/">Mario Sandoval Velázquez</a></p>
-     </footer>
+    <footer class="f_footer center">
+        <p class="txt-white bold f_footer_I">Technology Business & Research 2021</p>
+        <p class="txt-white bold f_footer_II">Made By <a href="https://www.linkedin.com/in/mario-sandoval-vel%C3%A1zquez-a010271a0/">Mario Sandoval Velázquez</a></p>
+    </footer>
 
     <script>
         const videos = document.querySelectorAll('video');
@@ -223,8 +226,10 @@
             })
         })
     </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-<script src="js/init.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+    <script src="js/init.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137988434-1"></script>
