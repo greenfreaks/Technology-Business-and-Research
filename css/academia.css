@@ -31,8 +31,8 @@ p{
 
 .content{
     width: 100%;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
 :root {
@@ -385,6 +385,20 @@ table tr th {
     border-radius: 10px;
 }
 
+/*----------------------------*/
+/*-----FLOATING BUTTON--------*/
+/*----------------------------*/
+
+.fab-img {
+    height: 60%;
+    width: auto;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 /*--------------------------*/
 /*--------NAVBAR------------*/
 /*--------------------------*/
@@ -654,12 +668,14 @@ footer{
 }
 .footer_II{
     margin-top: 20px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(auto, 1fr);
-    grid-template-areas: "footer_II_p       footer_II_p"
-                         "footer_II_fb      footer_II_tw"
-                         "footer_II_lk      footer_II_lk";
-    justify-items:center;
+    grid-template-areas: "footer_II_p"
+                         "footer_II_fb"      
+                         "footer_II_tw"
+                         "footer_II_lk";
+    justify-items:left;
+    padding-left: 120px;
 }
 
 .footer_III{
@@ -681,14 +697,21 @@ footer{
                          "footer_II_fb"      
                          "footer_II_tw"
                          "footer_II_lk";
-    justify-items: left;
+   padding-left: 30px;
+}
+}
+
+@media screen and (max-width: 500px){
+.footer{
+    padding-left: 30px;
+    padding-right: 30px;
 }
 }
 
 @media screen and (max-width: 370px){
 .footer{
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 .footer_II{
     padding-left: 20px; 
@@ -723,6 +746,7 @@ footer{
 /*-----------PHI-------------*/
 /*---------------------------*/
 .phi{
+    padding-top: 50px;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
@@ -747,6 +771,7 @@ footer{
 /*-----------PACT----------------*/
 /*-------------------------------*/
 .pact{
+    padding-top: 50px;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
@@ -772,7 +797,13 @@ footer{
 /*------------------------------*/
 
 @media screen and (max-width: 800px){
+
+.content{
+    padding-right: 80px;
+    padding-left: 80px;
+}
 .phi{
+    padding-top: 30px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(1, auto);
     grid-template-areas: "phi-I"     
@@ -783,6 +814,7 @@ footer{
     padding-bottom: 20px;
 }
 .pact{
+    padding-top: 30px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(1, auto);
     grid-template-areas: "pact-I"     
@@ -800,6 +832,11 @@ footer{
 /*------------------------------*/
 
 @media screen and (max-width: 600px){
+.content{
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
 .desc-aca h4{
     text-align: center;
     font-size: 1.9em;
@@ -826,7 +863,10 @@ footer{
 /*------------------------------*/
 
 @media screen and (max-width: 370px){
-
+.content{
+    padding-right: 30px;
+    padding-left: 30px;
+}
 p{
     font-size: 1.1em;
 }
@@ -836,7 +876,7 @@ p{
     font-size: 1.6em;
 }
 .aca-phi img, .aca-pact img{
-    max-width: 250px;
+    max-width: 150px;
 }
 .phi a,.pact a{
     font-size: 1em;

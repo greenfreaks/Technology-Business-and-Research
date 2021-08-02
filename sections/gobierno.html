@@ -21,29 +21,39 @@
     <meta name="description" content="Somos una empresa convencida de que el conocimiento científico y tecnológico y la suma de esfuerzos son la base del desarrollo social, económico y ambiental.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TB&amp;R - Technology Bussines and Research</title>
+
+     <script type="text/javascript" charset="utf-8">
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                touch: true,
+                pauseOnAction: false,
+                pauseOnHover: false,
+            });
+        });
+    </script>
 </head>
 
 <body>
 
-       <nav id="indexnav" class="indexnav">
+    <nav id="indexnav" class="indexnav">
         <div class="nav-wrapper container">
-            <a href="../index.html"><img class="header-logo hide-on-med-and-down" src="../img/logos/logo-blanco-horizontal.png"></a>
-            <a class="right logo-header-mobile orange-text hide-on-large-only" href="index.html"><img class="header-logo" src="../img/logos/logo-blanco-horizontal.png"></a>
+            <a href="../index.html"><img class="header-logo hide-on-med-and-down" src="../img/logos/logo_p3.png"></a>
+            <a class="right logo-header-mobile orange-text hide-on-large-only" href="index.html"><img class="header-logo" src="../img/logos/logo_p3.png"></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li class><a href="../#nosotros">Nosotros</a></li>
+                <li class><a href="../#servicios">Servicios</a></li>
+                <li class><a href="#">Blog</a></li>
                 <!--<li><a target="_blank" href="#st-blog">Blog</a></li> -->
             </ul>
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons" style="color: var(--black);">menu</i></a>
         </div>
     </nav>
 
     <ul id="nav-mobile" class="sidenav">
-        <div class="nav-logo center"><a href="../index.html"><img class="header-logo" src="../img/logo_p3.png"></a></div>
-                <li><a href=nosotros.html">Nosotros</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="blog.html">Blog</a></li>
+        <div class="nav-logo center"><a href="../index.html"><img class="header-logo-mobile" src="../img/logo_p3.png"></a></div>
+                <li><a href="../ #nosotros">Nosotros</a></li>
+                <li><a href="../ #servicios">Servicios</a></li>
+                <li><a href="#">Blog</a></li>
                 <!--<li><a target="_blank" href="#st-blog">Blog</a></li> -->
     </ul>
 
@@ -52,8 +62,8 @@
             <i data-position="left" data-tooltip="Asistencia en línea" class="large material-icons box tooltipped">chat</i>
         </a>
         <ul>
-            <li><a href="https://www.facebook.com/TechBusinessMx" target="_blank" class="btn-floating blue tooltipped" data-position="left" data-tooltip="Siguenos"> <img class="fab-img" src="img/social-networks/facebook-logo.png"> </a></li>
-            <li><a href="https://m.me/TechBusinessMx/" target="_blank" class="btn-floating blue tooltipped" data-position="left" data-tooltip="Chatea on nosotros"> <img class="fab-img" src="img/social-networks/messenger.png"> </a></li>
+            <li><a href="https://www.facebook.com/TechBusinessMx" target="_blank" class="btn-floating blue-tbr tooltipped" data-position="left" data-tooltip="Siguenos"> <img class="fab-img" src="img/social-networks/facebook-logo.png"> </a></li>
+            <li><a href="https://m.me/TechBusinessMx/" target="_blank" class="btn-floating blue tooltipped" data-position="left" data-tooltip="Chatea con nosotros"> <img class="fab-img" src="img/social-networks/messenger.png"> </a></li>
             <!--            <li><a href="tel:017797966790" class="btn-floating green tooltipped" data-position="left" data-tooltip="Llamanos 7711530636"> <i class="large material-icons box">phone</i></a></li>-->
             <li><a href="mailto:blabla@bla.com" class="btn-floating purple tooltipped" data-position="left" data-tooltip="Email"> <i class="large material-icons box">mail</i></a></li>
             <!--            <li><a href="https://www.instagram.com/" target="_blank" class="btn-floating purple"> <img class="fab-img" src="img/instagram-logo.png"> </a></li>-->
@@ -61,9 +71,34 @@
         </ul>
     </div>
 
-    <section class="banner">
-        <img src="../img/talleres/bg-estrategia_comercial.jpg">
-    </section>
+    <br>
+    <div class="space"></div>
+
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <img src="../img/inicio/slides/BannerInicio01-PNG-2000x600.png">
+                <section class="flex-caption">
+                    <p></p>
+                </section>
+            </li>
+            <!--<li>
+                <img src="../img/inicio/slides/BannerInicio01-GIF-2000x600.gif" alt="">
+                <section class="flex-caption">
+                    <p></p>
+                </section>
+            </li>
+            <li>
+                <img src="../img/2.jpg">
+                <section class="flex-caption">
+                    <p></p>
+                </section>
+            </li>-->
+        </ul>
+    </div>
+
+    <div class="content">
+
 
     <section class="desc-gob space">
         <h4 class="bg-black txt-white">¿Cómo podemos ayudar al sector público?</h4>
@@ -105,47 +140,71 @@
             </div>
         </div>
     </section>
+   </div>
     <div class="space"></div>
 
 
-    <footer class="page-footer custom-footer">
-        <div class="container">
-            <div class="row custom-row">
-                <div class="col l5 s12">
-                    <h6 class="white-text"><strong>Technology Bussines and Research</strong></h6>
-                    <p class="grey-text text-lighten-4 texto-footer justify">Somos una empresa convencida de que el conocimiento científico y tecnológico y la suma de esfuerzos son la base del desarrollo social, económico y ambiental.</p>
-                </div>
-                <div class="col l4 s12 ">
-                    <h6 class="white-text"><i class="material-icons">location_on</i>Ubícanos en:</h6>
+    <section class="footer space">
+        <div class="footer_I center">
+            <img src="../img/logos/logo-blanco-vertical.png">
+        </div>
 
-                    <p class="texto-footer"><a class="white-text" target="_blank" href="https://goo.gl/maps/mRMefDf6c7U2">Álvaro Obregón 56, Col. Atempa, Tizayuca, Hidalgo. CP 43808</a><br> Teléfono:<a class="white-text " href="tel:017797966790">01 779 796 6790</a></p>
-                </div>
-                <div class="col l3 s12">
-                    <h6 class="white-text">Más información</h6>
-                    <ul>
-                        <!--                        <li><a class="white-text btn-help" href="#!">Ayuda</a></li>-->
-                        <li><a class="white-text" href="http://www.techbusiness.com.mx/politica_de_privacidad.html" target="_blank">Política de Privacidad</a></li>
-                    </ul>
-                    <div class="row center">
-                        <div class="col s2"><a href="https://www.facebook.com/TechBusinessMx" target="_blank"><img class="social-footer" src="../img/social-networks/facebook-logo.png"></a> </div>
-                        <div class="col s2"><a href="https://twitter.com/TechBusinessMx" target="_blank"><img class="social-footer" src="../img/social-networks/twitter-logo-silhouette.svg"></a> </div>
-                        <div class="col s2"><a href="https://mx.linkedin.com/company/technology-business-and-research-sapi-de-cv" target="_blank"><img class="social-footer" src="../img/social-networks/linkedin-logo.svg"></a></div>
-                    </div>
-                </div>
+        <div class="footer_II left">
+            <h5 class="footer_II_p txt-white bold">Síguenos en nuestras redes sociales</h5> <br>
+
+            <div class="footer_II_fb">
+                <img src="../img/social-networks/facebook-logo.png">
+                <a class="bold" href="https://www.facebook.com/TechBusinessMx">https://www.facebook.com/TechBusinessMx</a>
+            </div> <br>
+
+            <div class="footer_II_tw">
+                <img src="../img/social-networks/twitter-logo-silhouette.svg">
+                <a class="bold" href="https://twitter.com/TechBusinessMx">https://twitter.com/TechBusinessMx</a>
+            </div> <br>
+
+            <div class="footer_II_lk"> 
+                <img src="../img/social-networks/linkedin-logo.svg">
+                <a class="bold" href="https://mx.linkedin.com/company/technology-business-and-research-sapi-de-cv">
+                    https://mx.linkedin.com/company/technology-business-and- <br> research-sapi-de-cv</a>
             </div>
         </div>
-        <div class="footer-copyright">
-            <div class="container">
-                <p class="right">Made by <a class="orange-text text-lighten-3">Mario Sandoval Velázquez</a> </p>
-                <p>©Technology Bussines &amp; Research 2017</p>
-            </div>
+
+        <div class="footer_III center">
+            <a href=""><h5 class="txt-white bold">Poítica de Privacidad</h5></a>
+            <a href=""><i class="fas fa-shield-alt txt-white"></i></a>
         </div>
+    </section>
+
+    <footer class="f_footer center">
+        <p class="txt-white bold f_footer_I">Technology Business & Research 2021</p>
+        <p class="txt-white bold f_footer_II">Made By <a href="https://www.linkedin.com/in/mario-sandoval-vel%C3%A1zquez-a010271a0/">Mario Sandoval Velázquez</a></p>
     </footer>
 
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        const videos = document.querySelectorAll('video');
+
+        videos.forEach(video => {
+
+            video.addEventListener('mouseover', function() {
+                this.play();
+            })
+            video.addEventListener('touchstart', function() {
+                this.play();
+            })
+
+            video.addEventListener('mouseout', function() {
+                this.load();
+            })
+
+            video.addEventListener('touchstop', function() {
+                this.load();
+            })
+        })
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <!--    <script src="js/materialize.js"></script>-->
+    
     <script src="../js/init.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
