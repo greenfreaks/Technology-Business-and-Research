@@ -1,5 +1,4 @@
 
-
 @font-face {
     src: url(fonts/OpenSans/OpenSans-Regular.ttf);
     font-family: OpenSans;
@@ -36,9 +35,6 @@ p{
 }
 
 :root {
- 
-
-
     --red-tbr: #DE4D4C;
     --dark-red: #BC3B3B;
     --darker-red: #991a1a;
@@ -69,9 +65,9 @@ i {
     /* Standard syntax */
 }
 
-/*html{
+html{
     scroll-behavior: smooth;
-}*/
+} 
 
 body {
    /* background-image: url("../img/patron-circuito.png");*/
@@ -724,287 +720,210 @@ footer{
     font-size:1em;
 }
 }
+/*---------------------------------*/
+/*------------PROPÓSITO------------*/
+/*---------------------------------*/
 
-/*---------------------------*/
-/*------GRID PHI-------------*/
-/*---------------------------*/
-.phi{
+.tit_proposito{
+    padding-top: 80px;
+    width:  100%;
+}
+
+.proposito{
+    width:  100%;
+    padding-top: 30px; 
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas: "phi-I     phi-II"
+    grid-gap: 40px;
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "proposito_I          proposito_II";
 }
-.phi-I{
-    grid-area: phi-I;
-    padding-left: 80px;
+
+.proposito_video{
+    width: 100%;
+    max-width: 350px;
 }
-.phi-II{
-    grid-area: phi-II;
-    padding-right: 80px;
+.proposito_I{
+    grid-area: proposito_I;
+}
+.proposito_I p{
     margin-top: 50px;
 }
-.phi img{
-    max-width: 514px;
-    max-height: 177px;
-}
-/*-------------------------------*/
-/*------VIDEO-PHI----------------*/
-/*-------------------------------*/
-
-.video-phi{
-    width: 1230px;
-    height: 700px;
+.proposito_II{
+    grid-area: proposito_II;
 }
 
-/*-------------------------------*/
-/*------INFO-PHI3----------------*/
-/*-------------------------------*/
-
-.info-phi{
+/*-----------------------------------*/
+/*------------CAPACIDADES------------*/
+/*-----------------------------------*/
+.capacidades{
+    width:  100%;
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr 350px;
+    grid-gap: 40px;
+    grid-template-columns: 400px 1fr;
     grid-template-rows: repeat(1fr, auto);
-    grid-template-areas: "info-phi-I            info-phi-II"
-                         "info-phi-III          info-phi-III";
-    padding-right: 50px;
-    padding-left: 50px;
+    grid-template-areas: "capacidades_II          capacidades_I";
 }
 
-.info-phi-I{
-    grid-area: info-phi-I;
+.capacidades_video{
+    width: 100%;
+    max-width: 350px;
+}
+.capacidades_I{
+    grid-area: capacidades_I;
+}
+.capacidades_I h5{
+    margin-top: 50px;
+}
+.capacidades_I p{
+    margin-top: 50px;
+}
+.capacidades_II{
+    grid-area: capacidades_II;
 }
 
-::selection{
-  background: rgb(0,123,255,0.3);
-}
-.wrapper{
- 
-}
-.wrapper .parent-tab,
-.wrapper .child-tab{
-  margin-bottom: 50px;
-  border-radius: 3px;
- /* box-shadow: 0px 0px 15px rgba(0,0,0,0.18);*/
-}
-.wrapper .parent-tab label,
-.wrapper .child-tab label{
-  /*background: #27699D;*/
-  border-bottom: solid 3px #27699D;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  border-radius: 3px;
-  position: relative;
-  /*z-index: 1;*/
-  transition: all 0.3s ease;
-}
-.wrapper .parent-tab label:hover{
-  background:#27699D
-}
-.parent-tab input:checked ~ label,
-.child-tab input:checked ~ label{
-  border-radius: 3px 3px 0 0;
-  background: #27699D;
-  color: #fff;
-}
-.wrapper label span{
-  color: #000;
-  font-size: 18px;
-  font-weight: 500;
-  /*text-shadow: 0 -1px 1px #0056b3;*/
-}
-.wrapper h1{
-  padding: 20px;
-  margin-top: 20px;
-  color: #fff;
-  text-align: center;
-  background: #27699D;
-  margin-bottom: 20px;
-}
-.wrapper .child-tab label span{
-  font-size: 17px;
-}
-.parent-tab label .icon{
-  position: relative;
-  height: 30px;
-  width: 30px;
-  font-size: 15px;
-  color: #fff;
-  display: block;
-  border-radius: 50%;
-  visibility: hidden;
-  /*text-shadow: 0 -1px 1px #0056b3;*/
-}
-.wrapper .child-tab label .icon{
-  height: 27px;
-  width: 27px;
-}
-.parent-tab label .icon i{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.parent-tab input:checked ~ label .icon i:before,
-.child-tab input:checked ~ label .icon i:before{
-  /*content: '\f068'; */
-}
-.wrapper .parent-tab .content,
-.wrapper .child-tab .sub-content{
-  max-height: 0px;
-  overflow: hidden;
-  background: #fff;
-  border-radius: 0 0 3px 3px;
-  transition: all 0.4s ease;
-  box-shadow: 10px 10px 10px #606060;
-}
-.parent-tab input:checked ~ .content,
-.child-tab input:checked ~ .sub-content{
-  max-height: 100vh;
-}
-.tab-3 input:checked ~ .content{
-  padding: 15px 20px;
-}
-.parent-tab .content p,
-.child-tab .sub-content p{
-  padding: 15px 20px;
-  font-size: 16px;
-}
-.child-tab .sub-content p{
-  font-size: 15px;
-}
-input[type="radio"],
-input[type="checkbox"]{
-  display: none;
-}
+/*---------------------------------*/
+/*------------SERVICIOS------------*/
+/*---------------------------------*/
 
-.wrapper-container .wrapper .eliminar{
-  display: none;
+.tit_servicios{
+    padding-top: 80px;
+    width:  100%;
 }
-
-.info-phi-II{
-    grid-area: info-phi-II;
+.servicios{
+    width:  100%;
+    padding-top: 30px;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(1fr, 3);
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "academia      industria       gobierno";
 }
-
-.info-phi-III{
-    grid-area: info-phi-III;
+.academia{
+    grid-area: academia;
+}
+.servicios img{
     width: 100%;
 }
 
-/*------------------------------*/
-/*-------CALL-REGISTRO----------*/
-/*------------------------------*/
+.gobierno{
+    grid-area: gobierno;
+}
+.gobierno h5{
+    padding-top: 14.5px;
+}
+.gobierno img{
+    width: 100%;
+}
+.gobierno br{
+    margin-top: 5px;
+}
+.servicios img{
+    border-radius: 10px;
+}
 
 
-/*------------------------------*/
-/*-------RESPONSIVE 800---------*/
-/*------------------------------*/
+/*---------------------------*/
+/*-------RESPONSIVE 800------*/
+/*---------------------------*/
 
 @media screen and (max-width: 800px){
 
-.phi{
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas: "phi-I"     
-                         "phi-II"
+.content{
+    padding-right: 70px;
+    padding-left: 70px;
 }
-.phi-I, .phi-II{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.phi-II{
-    margin-top: 10px;
-    padding-bottom: 20px;
-}
-.video-phi{
-    width: 700px;
-    height: 420px;
-}
-
-
-.info-phi{
+.proposito{
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 1fr 250px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "proposito_I"          
+                         "proposito_II";
+}
+
+.capacidades{
+    margin-top: 0px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(1fr, auto);
-    grid-template-areas: "info-phi-I            info-phi-II"
-                         "info-phi-III          info-phi-II";
+    grid-template-areas: "capacidades_I"          
+                        "capacidades_II";
+}
+
+.proposito_video, .capacidades_video{
+    width: 300px;
+}
+
+.servicios{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(1fr, 2);
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "academia      industria"       
+                         "gobierno      gobierno";
+}
+
+.industria br{
+    margin-top: 1px;
+}
+
+.gobierno img{
+    max-width: 450px;
+}
+
+}
+
+/*---------------------------*/
+/*-------RESPONSIVE 600------*/
+/*---------------------------*/
+
+@media screen and (max-width: 600px){
+.content{
     padding-right: 50px;
     padding-left: 50px;
 }
-}
-/*---------------------------*/
-/*------RESPONSIVE 600------*/
-/*-------------------------*/
-
-@media screen and (max-width: 600px){
-.desc-aca h4{
-    text-align: center;
-    font-size: 1.9em;
-}
-.video-phi{
-    width: 500px;
-    height: 270px;
-}
-
-.info-phi{
-    grid-template-columns: 1fr;
+.servicios{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(1fr, 3);
     grid-template-rows: repeat(1fr, auto);
-    grid-template-areas: "info-phi-II"            
-                         "info-phi-I"
-                         "info-phi-III";
+    grid-template-areas: "academia"
+                         "industria"       
+                         "gobierno";
 }
-
 }
 
 /*---------------------------*/
-/*------RESPONSIVE 500------*/
-/*-------------------------*/
+/*-------RESPONSIVE 500------*/
+/*---------------------------*/
 
 @media screen and (max-width: 500px){
-
-.aca-phi h3{
-    font-size: 1.6em;
-}
-.aca-phi img{
-    max-width: 314px;
+.capacidades_I p, .proposito_I p{
+    margin-top: 20px;
 }
 
-.video-phi{
-    width: 400px;
-    height: 250px;
 }
-}
-
 
 /*---------------------------*/
-/*------RESPONSIVE 370------*/
-/*-------------------------*/
+/*-------RESPONSIVE 370------*/
+/*---------------------------*/
 
 @media screen and (max-width: 370px){
-.desc-aca h4{
-    text-align: center;
-    font-size: 1.6em;
-    padding-right: 10px;
-    padding-left: 10px;
+h5{
+    font-size: 1.3em;
 }
-.aca-phi img{
-    max-width: 250px;
+p{
+    font-size: 1em;
 }
 
-.video-phi{
-    width: 320px;
-    height: 250px;
-}
-
-.info-phi{
-padding-right: 20px;
-padding-left: 20px;
+.proposito_video, .capacidades_video{
+    width: 200px;
 }
 
 }
+
+
+
+
 

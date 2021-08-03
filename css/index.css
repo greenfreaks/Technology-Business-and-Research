@@ -755,10 +755,14 @@ footer{
 /*-----------------------------------*/
 /*------------CAPACIDADES------------*/
 /*-----------------------------------*/
+.tit_capacidades{
+    padding-top: 80px;
+    width:  100%;
+    padding-left: 50px;
+}
 
 .capacidades{
     width:  100%;
-    margin-top: 50px;
     display: grid;
     grid-gap: 40px;
     grid-template-columns: 400px 1fr;
