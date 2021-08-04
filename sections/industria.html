@@ -3,10 +3,14 @@
 
 <head>
 
+   <meta charset="UTF-8">
+    <title>TB&amp;R - Technology Bussines and Research</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../css/materialize.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-    <link rel="stylesheet" href="../css/industria.css">
+    <link rel="stylesheet" href="../css/materialize.css" type="text/css">
+    <link rel="stylesheet" href="../css/academia.css" type="text/css">
+
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -20,9 +24,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Somos una empresa convencida de que el conocimiento científico y tecnológico y la suma de esfuerzos son la base del desarrollo social, económico y ambiental.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TB&amp;R - Technology Bussines and Research</title>
 
-     <script type="text/javascript" charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--<script src="../js/jquery.flexslider.js"></script>-->
+
+
+    <script type="text/javascript" charset="utf-8">
         $(window).load(function() {
             $('.flexslider').flexslider({
                 touch: true,
@@ -98,56 +106,62 @@
     </div>
 
     <div class="content">
-    <section class="desc-ind space">
-        <h4 class="bg-dark-gray txt-white">¿Cómo podemos ayudar a las empresas?</h4>
-        <p>Ayudamos a las empresas a implementar y acelerar procesos de innovación que impacten en su rentabilidad, a través de fortalecer sus capacidades de investigación y desarrollo, crear competencias y habilidades para la innovación en su personal, gestionar proyectos tecnológicos, obtener apoyos fiscales por sus inversiones en innovación y brindar servicios de consultoría en gestión, protección intelectual y comercialización de tecnologías.</p>
-    </section>
 
-    <section class="ind-consult space">
-        <div class="consult box-shadow">
-            <div class="consult-I center">
-                <h3 class="left bold">Consultoría y Capacitación para la Innovación</h3>
-                <p class="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="consult-II center">
-                <img src="../img/logos/logo Vectorizadopeque-02.png"> <br> <br>
-                <a href="consultoria.html" class="btn-red">Conoce más</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="ind-pact space">
-        <div class="pact box-shadow">
-            <div class="pact-I center">
-                <h3 class="left bold">PACT</h3>
-                <p class="left">La Plataforma de Aceleración Comercial de Tecnologías es una aplicación web, que analiza el nivel de madurez de una tecnología en su evolución desde el laboratorio hasta el mercado. Utiliza metodologías adoptadas a nivel internacional y que hemos integrado en este software, para que científicos, tecnólogos, oficinas de transferencia de tecnología, startups, empresas e instituciones de gobierno, midan, conozcan y evalúen el potencial de comercialización de una tecnología.</p>
-            </div>
-            <div class="pact-II center">
-                <img src="../img/logos/pact/pact-vertical-png.png"> <br> <br>
-                <a href="pact.html" class="btn-blue">Conoce más</a>
-            </div> <br>
-        </div>
-    </section>
-
-     <section class="ind-efidt space">
-        <div class="efidt box-shadow">
-            <div class="efidt-I center">
-                <h3 class="left bold">EFIDT</h3>
-                <p class="left">Ayudamos a las empresas que invierten en innovación a generar ahorros en impuestos  de hasta 50 mdp anuales, acreditables contra el pago del ISR a través del Estímulo Fiscal a la Investigación y Desarrollo de Tecnología. Este ahorro fiscal  es un derecho fundamentado en la Ley del ISR, que toda empresa puede solicitar  a través de los procedimientos normativos del EFIDT, para los cuales hemos desarrollado métodos y procesos de apoyo altamente efectivos y, de esta forma, ayudar a incentivar la inversión en innovación en México. </p>
-            </div>
-            <div class="efidt-II center">
-                <img src="../img/logos/efidt/efidt-png.png"> <br> <br>
-                <a href="efidt.html" class="btn-gray">Conoce más</a>
-            </div> <br>
-        </div>
-    </section>
-
+    <div class="tit_academia">
+        <h5 class="bold">¿Cómo ayudamos a las empresas?</h5>
+        <hr style="width: 50%; height: 5px; background: var(--blue-tbr); border-radius: 10px;" class="left"> <br>
+        <p>Como empresa, conocemos los retos en los procesos, personal y estrategias para ser más rentables a través de la innovación. Es por ello que brindamos capacitación y consultoría en proyectos tecnológicos, para apoyar con talento, herramientas y recursos a empresas que desean fortalecer sus capacidades y beneficios económicos, sociales y ambientales.</p>
     </div>
+
+    <section class="phi center">
+        <div class="phi_I">
+            <h5 class="left bold">Consultoría y capacitación para la innovación</h5>
+            <p class="justify left">Nuestros servicios se enfocan en metodologías, herramientas y procesos personalizados para el desarrollo y comercialización de innovaciones, abarcando los aspectos técnico, financiero y administrativo, para facilitar la adopción o desarrollo de tecnologías, talentos y estrategias que ayuden a cumplir sus objetivos de crecimiento.</p>
+        </div>
+
+        <div class="phi_II img">
+            <img src="../img/academia/Isotipo_Phi3_sin_fondo.png" class="phi_img"> <br>
+            <a href="#" class="btn-red" target="_blank">Saber más</a>
+        </div>
+    </section>
+
+    <section class="pact center">
+        <div class="pact_I">
+            <h5 class="left bold">Plataforma de Aceleración Comercial de Tecnologías</h5>
+            <p class="justify left">Es una aplicación web que analiza el nivel de madurez de una tecnología en su evolución desde el laboratorio hasta el mercado. Integra metodologías internacionales para que científicos, tecnólogos, oficinas de transferencia de tecnología, empresas e instituciones de gobierno, midan, conozcan y evalúen el potencial de comercialización de una tecnología.</p>
+        </div>
+
+        <div class="pact_II img">
+            <img src="../img/academia/PACT_Vertical_Sin_Fondo.png" class="pact_img"> <br> <br> <br>
+            <a href="http://techbusiness.com.mx/PACT/" class="btn-red" target="_blank">Saber más</a>
+        </div>
+    </section>
+
+    <section class="phi center">
+        <div class="phi_I">
+            <h5 class="left bold">Estímulo Fiscal a la Investigación y Desarrollo de Tecnología</h5>
+            <p class="justify left">Ayudamos a las empresas que invierten en innovación a generar ahorros en impuestos de hasta 50 mdp anuales, a través del Estímulo Fiscal a la Investigación y Desarrollo de Tecnología. Este ahorro fiscal es un derecho de toda empresa fundamentado en la Ley del ISR y para el cual hemos desarrollado métodos y procesos de apoyo altamente efectivos y, de esta forma, ayudar a las empresas que invierten en innovación en México.</p>
+        </div>
+
+        <div class="phi_II img">
+            <img src="../img/academia/Isotipo_Phi3_sin_fondo.png" class="phi_img"> <br>
+            <a href="#" class="btn-red" target="_blank">Saber más</a>
+        </div>
+    </section>
+
+    <section class="pact center">
+        <div class="pact_I">
+            <h5 class="left bold">Plataforma de Aceleración Comercial de Tecnologías</h5>
+            <p class="justify left">Es una aplicación web que analiza el nivel de madurez de una tecnología en su evolución desde el laboratorio hasta el mercado. Integra metodologías internacionales para que científicos, tecnólogos, oficinas de transferencia de tecnología, empresas e instituciones de gobierno, midan, conozcan y evalúen el potencial de comercialización de una tecnología.</p>
+        </div>
+
+        <div class="pact_II img">
+            <img src="../img/academia/PACT_Vertical_Sin_Fondo.png" class="pact_img"> <br> <br> <br>
+            <a href="#" class="btn-red" target="_blank">Saber más</a>
+        </div>
+    </section>
+
+</div>
     <div class="space"></div>
 
 

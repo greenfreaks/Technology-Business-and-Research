@@ -1,12 +1,16 @@
-x<!doctype html>
+<!doctype html>
 <html>
 
 <head>
 
+   <meta charset="UTF-8">
+    <title>TB&amp;R - Technology Bussines and Research</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../css/materialize.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-    <link rel="stylesheet" href="../css/gobierno.css">
+    <link rel="stylesheet" href="../css/materialize.css" type="text/css">
+    <link rel="stylesheet" href="../css/academia.css" type="text/css">
+
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -20,9 +24,13 @@ x<!doctype html>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Somos una empresa convencida de que el conocimiento científico y tecnológico y la suma de esfuerzos son la base del desarrollo social, económico y ambiental.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TB&amp;R - Technology Bussines and Research</title>
 
-     <script type="text/javascript" charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--<script src="../js/jquery.flexslider.js"></script>-->
+
+
+    <script type="text/javascript" charset="utf-8">
         $(window).load(function() {
             $('.flexslider').flexslider({
                 touch: true,
@@ -99,48 +107,37 @@ x<!doctype html>
 
     <div class="content">
 
+    <div class="tit_academia">
+        <h5 class="bold">¿Cómo ayudamos al gobierno?</h5>
+        <hr style="width: 50%; height: 5px; background: var(--blue-tbr); border-radius: 10px;" class="left"> <br>
+        <p>Ayudamos a instituciones de gobierno a desarrollar planes y programas de innovación, mediante servicios de consultoría,  estudios diagnósticos, capacitación a funcionarios y usuarios de programas públicos, y ejecución de proyectos con industria, academia y sociedad civil, para cumplir con los objetivos y metas de las políticas públicas de innovación.</p>
+    </div>
 
-    <section class="desc-gob space">
-        <h4 class="bg-black txt-white">¿Cómo podemos ayudar al sector público?</h4>
-        <p>Ayudamos al gobierno federal, estatal y municipal, a cumplir objetivos y metas de políticas públicas, planes, programas y proyectos basados en la ciencia, la tecnología y la innovación, mediante nuestros servicios de inteligencia y datos, estudios estratégicos, consultoría y capacitación en innovación, desarrollo de proyectos tecnológicos y servicios de difusión de la ciencia, la tecnología y las humanidades.</p>
-    </section>
+    <section class="phi center">
+        <div class="phi_I">
+            <h5 class="left bold">Consultoría y capacitación para la innovación</h5>
+            <p class="justify left">Brindamos servicios de capacitación y consultoría especializada en gestión de proyectos de desarrollo y vinculación tecnológica, para apoyar a dependencias de gobierno con sus inciativas públicas de innovación, y sus alianzas con otros actores clave en la academia, la industria y la sociedad civil organizada.</p>
+        </div>
 
-    <section class="gob-otn space">
-        <div class="otn box-shadow">
-            <div class="otn-I center">
-                <h3 class="left bold">Observatorio Tecnológico de Innovación y Competitividad (OTIC)</h3>
-                <p class="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="otn-II center">
-                <img src="../img/logos/OTN/OTN_temporal.png"> <br> <br>
-                <a href="otn.html" class="btn-black">Conoce más</a>
-            </div>
+        <div class="phi_II img">
+            <img src="../img/academia/Isotipo_Phi3_sin_fondo.png" class="phi_img"> <br>
+            <a href="#" class="btn-red" target="_blank">Saber más</a>
         </div>
     </section>
 
-    <section class="gob-consult space">
-        <div class="consult box-shadow">
-            <div class="consult-I center">
-                <h3 class="left bold">Consultoría y Capacitación para la Innovación</h3>
-                <p class="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="consult-II center">
-                <img src="../img/logos/logo Vectorizadopeque-02.png"> <br> <br>
-                <a href="consult.html" class="btn-blue">Conoce más</a>
-            </div>
+    <section class="pact center">
+        <div class="pact_I">
+            <h5 class="left bold">Inteligencia tecnológica en innovación y competitividad</h5>
+            <p class="justify left">Apoyamos con información e inteligencia estratégica a instituciones que buscan implementar y evaluar iniciativas de innovación que estimulen el bienestar social, económico y ambiental, a través de la toma de decisiones basadas en la evidencia en la ciencia, la tecnología y las humanidades.</p>
+        </div>
+
+        <div class="pact_II img">
+            <img src="../img/academia/PACT_Vertical_Sin_Fondo.png" class="pact_img"> <br> <br> <br>
+            <a href="#" class="btn-red" target="_blank">Saber más</a>
         </div>
     </section>
-   </div>
+
+</div>
     <div class="space"></div>
 
 

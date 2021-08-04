@@ -71,7 +71,7 @@ i {
 
 /*html{
     scroll-behavior: smooth;
-}*/
+}*/ 
 
 body {
    /* background-image: url("../img/patron-circuito.png");*/
@@ -726,208 +726,163 @@ footer{
 }
 
 /*---------------------------------*/
-/*------------ELEMENTS------------*/
+/*------------ELEMENTS-------------*/
 /*---------------------------------*/
 
-/*---------------------------------*/
-/*------------BANNER---------------*/
-/*---------------------------------*/
+/*-----------------------------------*/
+/*------------ACADEMIA---------------*/
+/*-----------------------------------*/
+.tit_academia{
+    padding-top: 40px;
+    width:  100%;
+}
 
+/*---------------------------*/
+/*-----------PHI-------------*/
+/*---------------------------*/
+.phi, .pact{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.phi{
+    width:  100%;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "phi_II          phi_I";
+}
 
-.banner img{
+.phi_img{
     width: 100%;
+    max-width: 350px;
 }
-
-/*-----------------------------------*/
-/*------------DESC IND---------------*/
-/*-----------------------------------*/
-.desc-ind{
-    padding-left: 40px;
-    padding-right: 40px;
+.phi_I{
+    grid-area: phi_I;
+    margin-top: 70px;
 }
-.desc-ind h4{
-    padding-top: 5px;
-    padding-bottom:5px;
-    border-radius: 5px;
-}
-
-/*-------------------------------*/
-/*------GRID CONSULT-------------*/
-/*-------------------------------*/
-.consult{
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas: "consult-I     consult-II"
-}
-.consult-I{
-    grid-area: consult-I;
-    padding-left: 80px;
-}
-.consult-II{
-    grid-area: consult-II;
-    padding-right: 80px;
+.phi_I h5{
     margin-top: 50px;
 }
-.consult a{
-    padding-left: 100px;
-    padding-right: 100px;
+.phi_I p{
+    margin-top: 50px;
 }
-.consult img{
-    max-width: 514px;
-    max-height: 177px;
+.phi_II{
+    grid-area: phi_II;
 }
 
 /*-------------------------------*/
-/*------GRID PACT----------------*/
+/*-----------PACT----------------*/
 /*-------------------------------*/
 .pact{
+    margin-top: 100px;
+    width:  100%;
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas: "pact-II     pact-I"
-}
-.pact-II{
-    grid-area: pact-II;
-    padding-left: 80px;
-    margin-top: 50px;
-}
-.pact-I{
-    grid-area: pact-I;
-    padding-right: 80px;
-}
-.pact a{
-    padding-left: 100px;
-    padding-right: 100px;
-}
-.pact img{
-    max-width: 514px;
-    max-height: 177px;
+    grid-gap: 40px;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "pact_II          pact_I";
 }
 
-/*-------------------------------*/
-/*------GRID EFIDT---------------*/
-/*-------------------------------*/
-.efidt{
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas: "efidt-I     efidt-II"
-}
-.efidt-I{
-    grid-area: efidt-I;
-    padding-left: 80px;
-}
-.efidt-II{
-    grid-area: efidt-II;
-    padding-right: 80px;
-    margin-top: 50px;
-}
-.efidt a{
-    padding-left: 100px;
-    padding-right: 100px;
-}
-.efidt img{
-    max-width: 514px;
-    max-height: 177px;
-}
-/*---------------------------*/
-/*-------RESPONSIVE 800---------*/
-/*-------------------------*/
-
-@media screen and (max-width: 800px){
-.consult{
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas: "consult-I"     
-                         "consult-II"
-}
-.consult-I, .consult-II{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.efidt{
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas: "efidt-I"     
-                         "efidt-II"
-}
-.efidt-I, .efidt-II{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.pact-I, .pact-II{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.consult-II, .pact-II .efidt-II{
-    margin-top: 10px;
-    padding-bottom: 20px;
-}
-.pact{
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas: "pact-I"     
-                         "pact-II"
-}
-
-.pact-I h3, .pact-I p{
-    text-align: left;
-}
-
-}
-
-/*---------------------------*/
-/*------RESPONSIVE 600------*/
-/*-------------------------*/
-
-@media screen and (max-width: 600px){
-.desc-ind h4{
-    text-align: center;
-    font-size: 1.9em;
-}
-}
-
-/*---------------------------*/
-/*------RESPONSIVE 500------*/
-/*-------------------------*/
-
-@media screen and (max-width: 500px){
-
-.ind-consult h3, .ind-pact h3, .ind-efidt h3{
-    font-size: 1.6em;
-}
-.ind-consult img, .ind-pact img, .ind-efidt img{
-    max-width: 314px;
-}
-}
-
-
-/*---------------------------*/
-/*------RESPONSIVE 370------*/
-/*-------------------------*/
-
-@media screen and (max-width: 370px){
-
-.desc-ind h4{
-    text-align: center;
-    font-size: 1.6em;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-.ind-consult img, .ind-pact img, .ind-efidt img{
+.pact_img{
+    width: 100%;
     max-width: 250px;
 }
-.consult a, .pact a, .efidt a{
-    font-size: 1em;
-    padding-left: 50px;
+.pact_I{
+    grid-area: pact_I;
+}
+.pact_I h5{
+    margin-top: 50px;
+}
+.pact_I p{
+    margin-top: 50px;
+}
+.pact_II{
+    grid-area: pact_II;
+}
+
+/*---------------------------*/
+/*-------RESPONSIVE 800------*/
+/*---------------------------*/
+
+@media screen and (max-width: 800px){
+.phi, .pact{
+    padding-right: 0px;
+    padding-left: 0px;
+    grid-gap: 20px;
+}
+.phi p, .pact_I p{
+    margin-top: 10px;
+}
+.content{
+    padding-right: 70px;
+    padding-left: 70px;
+}
+.phi{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "phi_I"          
+                         "phi_II";
+    margin-bottom: 20px;
+}
+
+.pact{
+    margin-top: 0px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "pact_I"          
+                        "pact_II";
+}
+
+.phi_img, .pact_img{
+    width: 300px;
+}
+}
+
+/*---------------------------*/
+/*-------RESPONSIVE 600------*/
+/*---------------------------*/
+
+@media screen and (max-width: 600px){
+.content{
     padding-right: 50px;
+    padding-left: 50px;
+}
+}
+
+/*---------------------------*/
+/*-------RESPONSIVE 500------*/
+/*---------------------------*/
+
+@media screen and (max-width: 500px){
+.pact_I p, .phi_I p{
+    margin-top: 20px;
 }
 
 }
+
+/*---------------------------*/
+/*-------RESPONSIVE 370------*/
+/*---------------------------*/
+
+@media screen and (max-width: 370px){
+h5{
+    font-size: 1.3em;
+}
+p{
+    font-size: 1em;
+}
+
+.phi_img, .pact_img{
+    width: 200px;
+}
+
+}
+
+
+
+
 

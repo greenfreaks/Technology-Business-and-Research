@@ -732,155 +732,157 @@ footer{
 /*-----------------------------------*/
 /*------------ACADEMIA---------------*/
 /*-----------------------------------*/
-.desc-aca h4{
-    padding-top: 5px;
-    padding-bottom:5px;
-}
-.desc-aca {
-    padding-top: 5px;
-    padding-bottom:5px;
-    border-radius: 5px;
+.tit_academia{
+    padding-top: 40px;
+    width:  100%;
 }
 
 /*---------------------------*/
 /*-----------PHI-------------*/
 /*---------------------------*/
+.phi, .pact{
+    padding-right: 50px;
+    padding-left: 50px;
+}
 .phi{
-    padding-top: 50px;
+    width:  100%;
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas: "phi-II     phi-I"
+    grid-gap: 40px;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "phi_II          phi_I";
 }
-.phi-I{
-    grid-area: phi-I;
+
+.phi_img{
+    width: 100%;
+    max-width: 350px;
 }
-.phi-II{
-    grid-area: phi-II;
-    margin-top: 20px;
+.phi_I{
+    grid-area: phi_I;
+    margin-top: 70px;
 }
-.phi a{
+.phi_I h5{
+    margin-top: 50px;
 }
-.phi img{
-    max-width: 514px;
-    max-height: 177px;
+.phi_I p{
+    margin-top: 50px;
+}
+.phi_II{
+    grid-area: phi_II;
 }
 
 /*-------------------------------*/
 /*-----------PACT----------------*/
 /*-------------------------------*/
 .pact{
-    padding-top: 50px;
+    margin-top: 100px;
+    width:  100%;
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas: "pact-II     pact-I"
-}
-.pact-II{
-    grid-area: pact-II;
-    margin-top: 20px;
-}
-.pact-I{
-    grid-area: pact-I;
-}
-.pact a{
-}
-.pact img{
-    max-width: 514px;
-    max-height: 177px;
+    grid-gap: 40px;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "pact_II          pact_I";
 }
 
-/*------------------------------*/
-/*-------RESPONSIVE 800---------*/
-/*------------------------------*/
+.pact_img{
+    width: 100%;
+    max-width: 250px;
+}
+.pact_I{
+    grid-area: pact_I;
+}
+.pact_I h5{
+    margin-top: 50px;
+}
+.pact_I p{
+    margin-top: 50px;
+}
+.pact_II{
+    grid-area: pact_II;
+}
+
+/*---------------------------*/
+/*-------RESPONSIVE 800------*/
+/*---------------------------*/
 
 @media screen and (max-width: 800px){
-
+.phi, .pact{
+    padding-right: 0px;
+    padding-left: 0px;
+    grid-gap: 20px;
+}
+.phi p, .pact_I p{
+    margin-top: 10px;
+}
 .content{
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-right: 70px;
+    padding-left: 70px;
 }
 .phi{
-    padding-top: 30px;
+    display: grid;
+    grid-gap: 20px;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas: "phi-I"     
-                         "phi-II"
+    grid-template-areas: "phi_I"          
+                         "phi_II";
+    margin-bottom: 20px;
 }
-.phi-II, .pact-II{
-    margin-top: 10px;
-    padding-bottom: 20px;
-}
+
 .pact{
-    padding-top: 30px;
+    margin-top: 0px;
+    display: grid;
+    grid-gap: 20px;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas: "pact-I"     
-                         "pact-II"
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "pact_I"          
+                        "pact_II";
 }
 
-.pact-I h3, .pact-I p{
-    text-align: left;
+.phi_img, .pact_img{
+    width: 300px;
+}
 }
 
-}
-
-/*------------------------------*/
-/*-------RESPONSIVE 600---------*/
-/*------------------------------*/
+/*---------------------------*/
+/*-------RESPONSIVE 600------*/
+/*---------------------------*/
 
 @media screen and (max-width: 600px){
 .content{
-    padding-right: 60px;
-    padding-left: 60px;
-}
-
-.desc-aca h4{
-    text-align: center;
-    font-size: 1.9em;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 }
 
-/*------------------------------*/
-/*-------RESPONSIVE 500---------*/
-/*------------------------------*/
+/*---------------------------*/
+/*-------RESPONSIVE 500------*/
+/*---------------------------*/
 
 @media screen and (max-width: 500px){
-
-.aca-phi h3, .aca-pact h3{
-    font-size: 1.6em;
-}
-.aca-phi img, .aca-pact img{
-    max-width: 314px;
-}
+.pact_I p, .phi_I p{
+    margin-top: 20px;
 }
 
+}
 
-/*------------------------------*/
-/*-------RESPONSIVE 370---------*/
-/*------------------------------*/
+/*---------------------------*/
+/*-------RESPONSIVE 370------*/
+/*---------------------------*/
 
 @media screen and (max-width: 370px){
-.content{
-    padding-right: 30px;
-    padding-left: 30px;
+h5{
+    font-size: 1.3em;
 }
 p{
-    font-size: 1.1em;
-}
-
-.desc-aca h4{
-    text-align: center;
-    font-size: 1.6em;
-}
-.aca-phi img, .aca-pact img{
-    max-width: 150px;
-}
-.phi a,.pact a{
     font-size: 1em;
 }
 
+.phi_img, .pact_img{
+    width: 200px;
 }
+
+}
+
+
+
+
 
