@@ -1,4 +1,5 @@
 
+
 @font-face {
     src: url(fonts/OpenSans/OpenSans-Regular.ttf);
     font-family: OpenSans;
@@ -35,6 +36,9 @@ p{
 }
 
 :root {
+ 
+
+
     --red-tbr: #DE4D4C;
     --dark-red: #BC3B3B;
     --darker-red: #991a1a;
@@ -65,9 +69,9 @@ i {
     /* Standard syntax */
 }
 
-html{
+/*html{
     scroll-behavior: smooth;
-} 
+}*/ 
 
 body {
    /* background-image: url("../img/patron-circuito.png");*/
@@ -720,158 +724,28 @@ footer{
     font-size:1em;
 }
 }
+
 /*---------------------------------*/
-/*------------PROPÓSITO------------*/
+/*------------ELEMENTS-------------*/
 /*---------------------------------*/
-
-.tit_proposito{
-    padding-top: 80px;
-    width:  100%;
-}
-
-.proposito{
-    width:  100%;
-    padding-top: 30px; 
-    display: grid;
-    grid-gap: 40px;
-    grid-template-columns: 1fr 400px;
-    grid-template-rows: repeat(1fr, auto);
-    grid-template-areas: "proposito_I          proposito_II";
-}
-
-.proposito_video{
-    width: 100%;
-    max-width: 350px;
-}
-.proposito_I{
-    grid-area: proposito_I;
-}
-.proposito_I p{
-    margin-top: 50px;
-}
-.proposito_II{
-    grid-area: proposito_II;
-}
 
 /*-----------------------------------*/
-/*------------CAPACIDADES------------*/
+/*------------ACADEMIA---------------*/
 /*-----------------------------------*/
-.capacidades{
-    width:  100%;
-    display: grid;
-    grid-gap: 40px;
-    grid-template-columns: 400px 1fr;
-    grid-template-rows: repeat(1fr, auto);
-    grid-template-areas: "capacidades_II          capacidades_I";
-}
 
-.capacidades_video{
-    width: 100%;
-    max-width: 350px;
-}
-.capacidades_I{
-    grid-area: capacidades_I;
-}
-.capacidades_I h5{
-    margin-top: 50px;
-}
-.capacidades_I p{
-    margin-top: 50px;
-}
-.capacidades_II{
-    grid-area: capacidades_II;
-}
+/*---------------------------*/
+/*-----------PHI-------------*/
+/*---------------------------*/
 
-/*---------------------------------*/
-/*------------SERVICIOS------------*/
-/*---------------------------------*/
-
-.tit_servicios{
-    padding-top: 80px;
-    width:  100%;
-}
-.servicios{
-    width:  100%;
-    padding-top: 30px;
-    display: grid;
-    grid-gap: 50px;
-    grid-template-columns: repeat(1fr, 3);
-    grid-template-rows: repeat(1fr, auto);
-    grid-template-areas: "academia      industria       gobierno";
-}
-.academia{
-    grid-area: academia;
-}
-.servicios img{
-    width: 100%;
-}
-
-.gobierno{
-    grid-area: gobierno;
-}
-.gobierno h5{
-    padding-top: 14.5px;
-}
-.gobierno img{
-    width: 100%;
-}
-.gobierno br{
-    margin-top: 5px;
-}
-.servicios img{
-    border-radius: 10px;
-}
-
+/*-------------------------------*/
+/*-----------PACT----------------*/
+/*-------------------------------*/
 
 /*---------------------------*/
 /*-------RESPONSIVE 800------*/
 /*---------------------------*/
 
 @media screen and (max-width: 800px){
-
-.content{
-    padding-right: 70px;
-    padding-left: 70px;
-}
-.proposito{
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr;
-    grid-template-areas: "proposito_I"          
-                         "proposito_II";
-}
-
-.capacidades{
-    margin-top: 0px;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(1fr, auto);
-    grid-template-areas: "capacidades_I"          
-                        "capacidades_II";
-}
-
-.proposito_video, .capacidades_video{
-    width: 300px;
-}
-
-.servicios{
-    display: grid;
-    grid-gap: 50px;
-    grid-template-columns: repeat(1fr, 2);
-    grid-template-rows: repeat(1fr, auto);
-    grid-template-areas: "academia      industria"       
-                         "gobierno      gobierno";
-}
-
-.industria br{
-    margin-top: 1px;
-}
-
-.gobierno img{
-    max-width: 450px;
-}
-
 }
 
 /*---------------------------*/
@@ -883,14 +757,12 @@ footer{
     padding-right: 50px;
     padding-left: 50px;
 }
-.servicios{
-    display: grid;
-    grid-gap: 50px;
-    grid-template-columns: repeat(1fr, 3);
-    grid-template-rows: repeat(1fr, auto);
-    grid-template-areas: "academia"
-                         "industria"       
-                         "gobierno";
+h1{
+    font-size: 3em;
+}
+
+h3{
+    font-size: 2em;
 }
 }
 
@@ -899,10 +771,18 @@ footer{
 /*---------------------------*/
 
 @media screen and (max-width: 500px){
-.capacidades_I p, .proposito_I p{
-    margin-top: 20px;
+.content{
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
+h1{
+    font-size: 2.8em;
+}
+
+h3{
+    font-size: 1.8em;
+}
 }
 
 /*---------------------------*/
@@ -913,12 +793,16 @@ footer{
 h5{
     font-size: 1.3em;
 }
-p{
-    font-size: 1em;
+
+h1{
+    font-size: 2.4em;
 }
 
-.proposito_video, .capacidades_video{
-    width: 200px;
+h3{
+    font-size: 1.4em;
+}
+p{
+    font-size: 1em;
 }
 
 }

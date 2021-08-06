@@ -1,5 +1,4 @@
 
-
 @font-face {
     src: url(fonts/OpenSans/OpenSans-Regular.ttf);
     font-family: OpenSans;
@@ -36,9 +35,6 @@ p{
 }
 
 :root {
- 
-
-
     --red-tbr: #DE4D4C;
     --dark-red: #BC3B3B;
     --darker-red: #991a1a;
@@ -728,9 +724,14 @@ footer{
 /*------------PROPÓSITO------------*/
 /*---------------------------------*/
 
+.tit_proposito{
+    padding-top: 80px;
+    width:  100%;
+}
+
 .proposito{
     width:  100%;
-    padding-top: 70px; 
+    padding-top: 30px; 
     display: grid;
     grid-gap: 40px;
     grid-template-columns: 1fr 400px;
@@ -740,7 +741,7 @@ footer{
 
 .proposito_video{
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
 }
 .proposito_I{
     grid-area: proposito_I;
@@ -755,12 +756,6 @@ footer{
 /*-----------------------------------*/
 /*------------CAPACIDADES------------*/
 /*-----------------------------------*/
-.tit_capacidades{
-    padding-top: 80px;
-    width:  100%;
-    padding-left: 50px;
-}
-
 .capacidades{
     width:  100%;
     display: grid;
@@ -794,10 +789,10 @@ footer{
 .tit_servicios{
     padding-top: 80px;
     width:  100%;
-    padding-left: 50px;
 }
 .servicios{
     width:  100%;
+    padding-top: 30px;
     display: grid;
     grid-gap: 50px;
     grid-template-columns: repeat(1fr, 3);
@@ -858,10 +853,6 @@ footer{
 
 .proposito_video, .capacidades_video{
     width: 300px;
-}
-
-.tit_servicios{
-    padding-left: 10px;
 }
 
 .servicios{

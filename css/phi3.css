@@ -29,7 +29,7 @@ p{
     font-size: 1.2em;
 }
 
-.content{
+.content_container{
     width: 100%;
     padding-right: 100px;
     padding-left: 100px;
@@ -725,36 +725,24 @@ footer{
 }
 }
 
-/*---------------------------*/
-/*------GRID PHI-------------*/
-/*---------------------------*/
-.phi{
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas: "phi-I     phi-II"
-}
-.phi-I{
-    grid-area: phi-I;
-    padding-left: 80px;
-}
-.phi-II{
-    grid-area: phi-II;
-    padding-right: 80px;
-    margin-top: 50px;
-}
-.phi img{
-    max-width: 514px;
-    max-height: 177px;
-}
 /*-------------------------------*/
 /*------VIDEO-PHI----------------*/
 /*-------------------------------*/
 
-.video-phi{
-    width: 1230px;
-    height: 700px;
+/*.video-phi{
+    width: 100%;
+    height: 600px;
+    display: none;
+}*/
+
+.phi_img{
+  padding-top: 50px;
+  width: 100%;
+}
+
+.phi_img img{
+  width: 100%;
+  height: 500px;
 }
 
 /*-------------------------------*/
@@ -762,14 +750,12 @@ footer{
 /*-------------------------------*/
 
 .info-phi{
+    width: 100%; 
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 350px;
     grid-template-rows: repeat(1fr, auto);
-    grid-template-areas: "info-phi-I            info-phi-II"
-                         "info-phi-III          info-phi-III";
-    padding-right: 50px;
-    padding-left: 50px;
+    grid-template-areas: "info-phi-I            info-phi-II";
 }
 
 .info-phi-I{
@@ -791,7 +777,7 @@ footer{
 .wrapper .parent-tab label,
 .wrapper .child-tab label{
   /*background: #27699D;*/
-  border-bottom: solid 3px #27699D;
+  background-color: #27699D;
   padding: 10px 20px;
   display: flex;
   align-items: center;
@@ -803,16 +789,17 @@ footer{
   transition: all 0.3s ease;
 }
 .wrapper .parent-tab label:hover{
-  background:#27699D
+  background:#06202a;
 }
+
 .parent-tab input:checked ~ label,
 .child-tab input:checked ~ label{
   border-radius: 3px 3px 0 0;
-  background: #27699D;
+  background: #06202a;
   color: #fff;
 }
 .wrapper label span{
-  color: #000;
+  color: #fff;
   font-size: 18px;
   font-weight: 500;
   /*text-shadow: 0 -1px 1px #0056b3;*/
@@ -855,6 +842,8 @@ footer{
 }
 .wrapper .parent-tab .content,
 .wrapper .child-tab .sub-content{
+  padding-left: 25px;
+  padding-right: 25px;
   max-height: 0px;
   overflow: hidden;
   background: #fff;
@@ -895,46 +884,116 @@ input[type="checkbox"]{
     width: 100%;
 }
 
+.wrapper .parent-tab .content{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(auto, 1fr);
+  grid-template-areas: "cont_I      cont_II";
+  overflow-y: hidden;
+}
+
+.cont_I{
+  grid-area: cont_I;
+}
+.cont_II{
+  grid-area: cont_II;
+}
+
 /*------------------------------*/
-/*-------CALL-REGISTRO----------*/
+/*-----------MODULOS------------*/
+/*------------------------------*/
+.modulos{
+  padding-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-template-areas: "modulo_I      modulo_II"
+                       "modulo_III    modulo_IV";
+}
+
+.modulo .modulos_btn{
+  padding-top: 20px;
+}
+
+.modulo_I{
+  grid-area: modulo_I;
+}
+.modulo_II{
+  grid-area: modulo_II;
+}
+.modulo_III{
+  grid-area: modulo_III;
+}
+.modulo_IV{
+  grid-area: modulo_IV;
+}
+
+.modulos img{
+  width: 100%;
+}
+
+/*------------------------------*/
+/*-----------MODULOS------------*/
 /*------------------------------*/
 
+.preguntas_frecuentes{
+  padding-top: 100px;
+}
+
+.preguntas_frecuentes h6{
+  padding-bottom: 20px;
+}
+.preguntas_frecuentes p, .preguntas_frecuentes ul{
+  padding-bottom: 50px;
+}
+
+
+
+.preguntas_frecuentes ul{
+  font-size: 1.2em;
+  padding-left: 70px;
+}
+.preguntas_frecuentes ul li{
+  list-style: disc;
+  padding-bottom: 10px;
+}
 
 /*------------------------------*/
 /*-------RESPONSIVE 800---------*/
 /*------------------------------*/
 
 @media screen and (max-width: 800px){
+  .content_container{
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+}
 
-.phi{
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas: "phi-I"     
-                         "phi-II"
+.wrapper .parent-tab .content,
+.wrapper .child-tab .sub-content{
+  grid-template-columns: 1fr;
+  grid-template-areas: "cont_I"      
+                       "cont_II";
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow-y: scroll;
 }
-.phi-I, .phi-II{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.phi-II{
-    margin-top: 10px;
-    padding-bottom: 20px;
-}
+
 .video-phi{
-    width: 700px;
-    height: 420px;
+    height: 400px;
 }
-
-
+.phi_img img{
+  height: 300px;
+}
 .info-phi{
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 250px;
     grid-template-rows: repeat(1fr, auto);
-    grid-template-areas: "info-phi-I            info-phi-II"
-                         "info-phi-III          info-phi-II";
-    padding-right: 50px;
-    padding-left: 50px;
+    grid-template-areas: "info-phi-I            info-phi-II";
 }
 }
 /*---------------------------*/
@@ -942,13 +1001,13 @@ input[type="checkbox"]{
 /*-------------------------*/
 
 @media screen and (max-width: 600px){
-.desc-aca h4{
-    text-align: center;
-    font-size: 1.9em;
-}
 .video-phi{
     width: 500px;
     height: 270px;
+}
+
+.phi_img img{
+  height: 220px;
 }
 
 .info-phi{
@@ -957,6 +1016,15 @@ input[type="checkbox"]{
     grid-template-areas: "info-phi-II"            
                          "info-phi-I"
                          "info-phi-III";
+}
+
+.modulos{
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto, 1fr);
+  grid-template-areas: "modulo_I"
+                       "modulo_II"
+                       "modulo_III"
+                       "modulo_IV";
 }
 
 }
@@ -978,6 +1046,10 @@ input[type="checkbox"]{
     width: 400px;
     height: 250px;
 }
+
+.phi_img img{
+  height: 180px;
+}
 }
 
 
@@ -986,24 +1058,35 @@ input[type="checkbox"]{
 /*-------------------------*/
 
 @media screen and (max-width: 370px){
-.desc-aca h4{
-    text-align: center;
-    font-size: 1.6em;
-    padding-right: 10px;
-    padding-left: 10px;
+p{
+  font-size: 1em;
 }
-.aca-phi img{
-    max-width: 250px;
+.content_container{
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
 }
-
 .video-phi{
-    width: 320px;
-    height: 250px;
+    width: 330px;
+    height: 180px;
 }
 
-.info-phi{
-padding-right: 20px;
-padding-left: 20px;
+.phi_img img{
+  height: 150px;
+}
+
+.wrapper .parent-tab .content,
+.wrapper .child-tab .sub-content{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.modulo_I, .modulo_II, .modulo_III, .modulo_IV{
+  padding-bottom: 20px;
+}
+
+.preguntas_frecuentes ul{
+  padding-left: 30px;
 }
 
 }
