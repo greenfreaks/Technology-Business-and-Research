@@ -802,6 +802,10 @@ footer{
 .academia{
     grid-area: academia;
 }
+
+.academia br{
+    margin-top: 100px;
+}
 .servicios img{
     width: 100%;
 }
