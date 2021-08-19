@@ -48,7 +48,7 @@ html{
     padding-right: 50px;
     display: grid;
     grid-gap: 50px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 400px;
     grid-template-rows: repeat(1fr, auto);
     grid-template-areas: "proposito_I          proposito_II";
 }
