@@ -21,7 +21,6 @@
     width: 100%;
     padding-right: 100px;
     padding-left: 100px;
-    background: #000;
 }
 /*-------------------------------*/
 /*------VIDEO-PHI----------------*/
@@ -218,6 +217,9 @@ input[type="checkbox"]{
 
 .modulo_I{
   grid-area: modulo_I;
+}
+.modulo_I a{
+    display: none;
 }
 .modulo_II{
   grid-area: modulo_II;

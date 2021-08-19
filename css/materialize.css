@@ -5559,7 +5559,7 @@ input[type=range]::-ms-thumb {
     padding: 16px 16px 0; } }
 .sidenav .collapsible-body > ul:not(.collapsible) > li.active,
 .sidenav.sidenav-fixed .collapsible-body > ul:not(.collapsible) > li.active {
-  background-color: #991a1a; }
+  background-color: #00acc1; }
   .sidenav .collapsible-body > ul:not(.collapsible) > li.active a,
   .sidenav.sidenav-fixed .collapsible-body > ul:not(.collapsible) > li.active a {
     color: #fff; }
@@ -5646,7 +5646,7 @@ input[type=range]::-ms-thumb {
 
 .spinner-green,
 .spinner-green-only {
-  border-color: #991a1a; }
+  border-color: #0f9d58; }
 
 /**
  * IMPORTANT NOTE ABOUT CSS ANIMATION PROPERTIES (keanulee):
@@ -5938,17 +5938,25 @@ input[type=range]::-ms-thumb {
     opacity: 0; } }
 .slider {
   position: relative;
+  height: 400px;
   width: 100%; }
-
-.slider img{
+  .slider.fullscreen {
+    height: 100%;
     width: 100%;
-}
-
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+    .slider.fullscreen ul.slides {
+      height: 100%; }
+    .slider.fullscreen ul.indicators {
+      z-index: 2;
+      bottom: 30px; }
   .slider .slides {
-  margin: 0;
-  padding: 0;
-  list-style: none;}
-
+    background-color: #9e9e9e;
+    margin: 0;
+    height: 400px; }
     .slider .slides li {
       opacity: 0;
       position: absolute;
@@ -5992,14 +6000,13 @@ input[type=range]::-ms-thumb {
       transition: background-color .3s;
       border-radius: 50%; }
       .slider .indicators .indicator-item.active {
-        /*background-color: #4CAF50; */
-          background-color: #DE4D4C;
-      }
+        background-color: #4CAF50; }
 
 .carousel {
   overflow: hidden;
   position: relative;
   width: 100%;
+  height: 400px;
   perspective: 500px;
   transform-style: preserve-3d;
   transform-origin: 0% 50%; }

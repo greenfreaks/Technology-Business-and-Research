@@ -1,0 +1,152 @@
+:root {
+    --red-tbr: #DE4D4C;
+    --dark-red: #BC3B3B;
+    --darker-red: #991a1a;
+
+    --blue-tbr: #27699D;
+    --dark-blue: #06202a;
+    --darker-blue: #041921;
+
+    --white: #fff;
+    --soft-gray: #E5E4E4;
+    --gray: #606060;
+    --dark-gray: #26292B;
+
+    --black: #000;
+    --shadow-color: ##aaa8a8;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*.content{
+    width: 100%;
+    padding-right: 100px;
+    padding-left: 100px;
+}*/
+
+/*---------------------------------*/
+/*------------ELEMENTS-------------*/
+/*---------------------------------*/
+
+/*-----------------------------------*/
+/*-----------PACT--------------------*/
+/*-----------------------------------*/
+
+.pact-I{
+    padding-top: 30px;
+}
+
+.pact-I, .pact-II{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.pact-III, .pact-V{
+    background-color: #00AC41;
+}
+
+.pact-II{
+    padding-bottom: 50px;
+}
+
+.pact-II i{
+    padding-top: 10px;
+    font-size: 5em;
+    display: flex;
+    justify-content: center;
+    color: var(--dark-gray);
+}
+
+.pact-IV, .pact-VI{
+    background-color: #0069B7;
+}
+
+.pact-III, .pact-IV, .pact-V, .pact-VI{
+    padding: 50px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+.grid_pact{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "grid_pact_I           grid_pact_II";
+}
+
+.grid_pact_I{
+    grid_area: grid_pact_I;
+}
+.grid_pact_II{
+    grid_area: grid_pact_II;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid_pact img{
+    max-width: 400px;
+}
+
+.pact_btn{
+    padding-top: 25px;
+}
+
+
+/*---------------------------*/
+/*-------RESPONSIVE 800------*/
+/*---------------------------*/
+
+@media screen and (max-width: 800px){
+    .grid_pact{
+        grid-template-columns: 1fr;
+        grid-template-areas: "grid_pact_I"           
+                             "grid_pact_II";
+    }
+    .pact-III, .pact-IV, .pact-V, .pact-VI{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+/*---------------------------*/
+/*-------RESPONSIVE 600------*/
+/*---------------------------*/
+
+@media screen and (max-width: 600px){
+
+}
+
+/*---------------------------*/
+/*-------RESPONSIVE 500------*/
+/*---------------------------*/
+
+@media screen and (max-width: 500px){
+    .grid_pact img{
+        max-width: 300px;
+    }
+}
+
+/*---------------------------*/
+/*-------RESPONSIVE 370------*/
+/*---------------------------*/
+
+@media screen and (max-width: 370px){
+    .pact-III, .pact-IV, .pact-V, .pact-VI{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .grid_pact img{
+        max-width: 200px;
+    }
+    h3{
+        font-size: 2em;
+    }
+}
+
+
+
+
+

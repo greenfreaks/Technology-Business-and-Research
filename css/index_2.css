@@ -25,9 +25,11 @@ html{
     padding-right: 100px;
     padding-left: 100px;
 }
-*{
-    background: #000;
+
+.flexslider{
+    display: none;
 }
+
 
 /*---------------------------------*/
 /*------------PROPÓSITO------------*/
@@ -141,12 +143,23 @@ html{
     border-radius: 10px;
 }
 
+.servicios .serv_btn{
+    padding-top: 50px;
+}
+
 
 /*---------------------------*/
 /*-------RESPONSIVE 800------*/
 /*---------------------------*/
 
 @media screen and (max-width: 800px){
+    .flexslider{
+        display: block;
+    }
+    
+    .slider{
+        display: none;
+    }
 
 .content{
     padding-right: 70px;

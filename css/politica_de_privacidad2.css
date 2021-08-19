@@ -1,0 +1,100 @@
+:root {
+    --red-tbr: #DE4D4C;
+    --dark-red: #BC3B3B;
+    --darker-red: #991a1a;
+
+    --blue-tbr: #27699D;
+    --dark-blue: #06202a;
+    --darker-blue: #041921;
+
+    --white: #fff;
+    --soft-gray: #E5E4E4;
+    --gray: #606060;
+    --dark-gray: #26292B;
+
+    --black: #000;
+    --shadow-color: ##aaa8a8;
+}
+
+
+.content{
+    width: 100%;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+/*---------------------------------*/
+/*------------ELEMENTS-------------*/
+/*---------------------------------*/
+
+li ol, .text-correction{
+    font-size: 1.2em;
+    padding-left: 100px;
+}
+
+@media screen and (max-width: 800px){
+}
+
+/*---------------------------*/
+/*-------RESPONSIVE 600------*/
+/*---------------------------*/
+
+@media screen and (max-width: 600px){
+.content{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+h1{
+    font-size: 3em;
+}
+
+h3{
+    font-size: 2em;
+}
+}
+
+/*---------------------------*/
+/*-------RESPONSIVE 500------*/
+/*---------------------------*/
+
+@media screen and (max-width: 500px){
+.content{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+h1{
+    font-size: 2.8em;
+}
+
+h3{
+    font-size: 1.8em;
+}
+}
+
+/*---------------------------*/
+/*-------RESPONSIVE 370------*/
+/*---------------------------*/
+
+@media screen and (max-width: 370px){
+h5{
+    font-size: 1.3em;
+}
+
+h1{
+    font-size: 2.4em;
+}
+
+h3{
+    font-size: 1.4em;
+}
+p{
+    font-size: 1em;
+}
+
+}
+
+
+
+
+
